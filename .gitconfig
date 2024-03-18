@@ -1,0 +1,13 @@
+[credential]
+	helper = 
+	helper = /usr/local/bin/git-credential-manager
+	credentialStore = gpg
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+[user]
+	name = Chirag Verma
+	email = chiragverma1013@gmail.com
+[core]
+	autocrlf = input
+[init]
+	defaultBranch = main
