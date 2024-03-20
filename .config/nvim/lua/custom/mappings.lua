@@ -71,4 +71,36 @@ M.general = {
 
 -- more keybinds!
 
+M.lspconfig = {
+  plugin = true,
+
+  n = {
+    ["<leader>co"] = {
+      function()
+        vim.lsp.buf.code_action {
+          apply = true,
+          context = {
+            only = { "source.organizeImports.ts" },
+            diagnostics = {},
+          },
+        }
+      end,
+      "Organize Imports",
+    },
+
+    ["<leader>cR"] = {
+      function()
+        vim.lsp.buf.code_action {
+          apply = true,
+          context = {
+            only = { "source.removeUnused.ts" },
+            diagnostics = {},
+          },
+        }
+      end,
+      "Remove Unused Imports",
+    },
+  },
+}
+
 return M
