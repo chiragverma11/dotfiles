@@ -22,9 +22,12 @@ M.treesitter = {
   },
   indent = {
     enable = true,
-    -- disable = {
-    --   "python"
-    -- },
+    disable = {},
+  },
+  highlight = {
+    enable = true,
+    use_languagetree = true,
+  },
   },
 }
 
