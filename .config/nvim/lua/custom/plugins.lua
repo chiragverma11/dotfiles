@@ -134,6 +134,8 @@ local plugins = {
   {
     "Exafunction/codeium.vim",
     event = "BufEnter",
+    build = ":Codeium Auth",
+  },
   },
   -- To make a plugin not be loaded
   -- {
