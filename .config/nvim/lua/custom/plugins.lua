@@ -136,7 +136,36 @@ local plugins = {
     event = "BufEnter",
     build = ":Codeium Auth",
   },
+
+  {
+    "folke/trouble.nvim",
+    event = "VeryLazy",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    opts = {
+      use_diagnostic_signs = true,
+      actions_keys = {
+        close = { "q", "<Esc>" },
+        cancel = "<C-e>",
+      },
+    },
   },
+
+  {
+    "kylechui/nvim-surround",
+    version = "*", -- Use for stability; omit to use `main` branch for the latest features
+    event = "VeryLazy",
+    config = function()
+      require("nvim-surround").setup {}
+    end,
+  },
+
+  {
+    "folke/zen-mode.nvim",
+    cmd = {
+      "ZenMode",
+    },
+  },
+
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",
