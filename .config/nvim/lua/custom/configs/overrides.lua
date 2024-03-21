@@ -6,11 +6,19 @@ M.treesitter = {
     "lua",
     "html",
     "css",
+    "scss",
     "javascript",
     "typescript",
     "tsx",
     "markdown",
     "markdown_inline",
+    "prisma",
+    "json",
+    "jsonc",
+    "jsdoc",
+    "yaml",
+    "bash",
+    "regex",
   },
   indent = {
     enable = true,
@@ -34,6 +42,8 @@ M.mason = {
     "prettier",
     "tailwindcss-language-server",
     "eslint-lsp",
+    "json-lsp",
+    "prisma-language-server",
 
     -- c/cpp stuff
     -- "clangd",
