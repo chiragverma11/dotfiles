@@ -1,0 +1,19 @@
+{
+  "Typescript React Functional Component": {
+    "prefix": "fc",
+    "body": [
+      "import { FC } from 'react'",
+      "",
+      "interface ${1:${TM_FILENAME_BASE}}Props {",
+      "  $2",
+      "}",
+      "",
+      "const ${1:$TM_FILENAME_BASE}: FC<${1:TM_FILENAME_BASE}Props> = ({$3}) => {",
+      "  return <div>${1:$TM_FILENAME_BASE}</div>",
+      "}",
+      "",
+      "export default ${1:$TM_FILENAME_BASE}"
+    ],
+    "description": "Typescript React Function Component"
+  }
+}
