@@ -103,6 +103,41 @@ M.lspconfig = {
   },
 }
 
+M.trouble = {
+  n = {
+    ["<leader>tx"] = {
+      function()
+        require("trouble").toggle()
+      end,
+      "Toggle Trouble Menu",
+    },
+    ["<leader>tw"] = {
+      function()
+        require("trouble").toggle "workspace_diagnostics"
+      end,
+      "Toggle Workspace Diagnostics",
+    },
+    ["<leader>td"] = {
+      function()
+        require("trouble").toggle "document_diagnostics"
+      end,
+      "Toggle Document Diagnostics",
+    },
+    ["<leader>tl"] = {
+      function()
+        require("trouble").toggle "loclist"
+      end,
+      "Toggle List Diagnostics",
+    },
+    ["<leader>tq"] = {
+      function()
+        require("trouble").toggle "quickfix"
+      end,
+      "Toggle Quickfix Diagnostics",
+    },
+  },
+}
+
 M.treesj = {
   n = {
     ["<leader>mt"] = {
