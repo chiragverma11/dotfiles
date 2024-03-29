@@ -174,6 +174,17 @@ local plugins = {
     },
   },
 
+  {
+    "Wansmer/treesj",
+    dependencies = { "nvim-treesitter/nvim-treesitter" },
+    cmd = { "TSJToggle", "TSJSplit", "TSJJoin" },
+    config = function()
+      require("treesj").setup {
+        use_default_keymaps = false,
+      }
+    end,
+  },
+
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",

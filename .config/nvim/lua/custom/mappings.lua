@@ -103,4 +103,15 @@ M.lspconfig = {
   },
 }
 
+M.treesj = {
+  n = {
+    ["<leader>mt"] = {
+      function()
+        require("treesj").toggle()
+      end,
+      "Toggle Split Join",
+    },
+  },
+}
+
 return M
