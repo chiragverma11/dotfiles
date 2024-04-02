@@ -80,7 +80,7 @@ local plugins = {
         config = function()
           local cmp = require "cmp"
 
-          cmp.setup.cmdline("/", {
+          cmp.setup.cmdline({ "/", "?" }, {
             mapping = cmp.mapping.preset.cmdline(),
             sources = {
               { name = "buffer" },
