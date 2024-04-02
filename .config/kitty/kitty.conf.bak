@@ -17,19 +17,25 @@ hide_window_decorations yes
 editor nvim
 
 # Opacity
-background_opacity 0.90
+background_opacity 0.92
 # background_blur 20
 # background_tint 0.5
 # background_image /path_to_image
 dynamic_background_opacity yes
 # tab_bar_edge top
 
-
 #Keybindings 
 
 map f1 copy_to_buffer a
 map f2 paste_from_buffer a
 map alt+shift+t launch --cwd=current --type=tab
+
+# Change font font_size
+
+map ctrl+shift+equal change_font_size all +0.5
+map ctrl+shift+plus change_font_size all +0.5
+
+map ctrl+shift+minus change_font_size all -0.5
 
 # Splits Layout Keybindings
 
