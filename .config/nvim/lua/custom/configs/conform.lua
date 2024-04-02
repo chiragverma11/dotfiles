@@ -12,12 +12,15 @@ local options = {
     typescriptreact = { { "prettierd", "prettier" } },
 
     css = { { "prettierd", "prettier" } },
+    scss = { { "prettierd", "prettier" } },
+    less = { { "prettierd", "prettier" } },
     html = { { "prettierd", "prettier" } },
 
     json = { { "prettierd", "prettier" } },
     jsonc = { { "prettierd", "prettier" } },
     yaml = { { "prettierd", "prettier" } },
     markdown = { { "prettierd", "prettier" } },
+    ["markdown.mdx"] = { { "prettierd", "prettier" } },
     graphql = { { "prettierd", "prettier" } },
 
     sh = { "shfmt" },
