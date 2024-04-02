@@ -90,6 +90,17 @@ local plugins = {
           -- `:` cmdline setup.
           cmp.setup.cmdline(":", {
             mapping = cmp.mapping.preset.cmdline(),
+            mapping = cmp.mapping.preset.cmdline {
+              ["<CR>"] = {
+                c = function(default)
+                  if cmp.visible() then
+                    return cmp.confirm { select = true }
+                  end
+
+                  default()
+                end,
+              },
+            },
             sources = cmp.config.sources({
               { name = "path" },
             }, {
