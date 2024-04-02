@@ -48,6 +48,7 @@ M.mason = {
     "typescript-language-server",
     -- "deno",
     "prettier",
+    "prettierd",
     "tailwindcss-language-server",
     "eslint-lsp",
     "json-lsp",
