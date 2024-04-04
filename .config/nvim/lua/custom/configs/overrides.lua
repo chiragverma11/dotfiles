@@ -80,10 +80,11 @@ M.nvimtree = {
 }
 
 -- nvim-colorizer
-M.colorizer = {
-  filetypes = { "*" },
+M.nvim_colorizer = {
+  fileTypes = {
+    "!cmp_menu",
+  },
   user_default_options = {
-    css = true,
     tailwind = true,
   },
 }

@@ -30,10 +30,10 @@ local plugins = {
     opts = overrides.nvimtree,
   },
 
-  -- {
-  --   "NvChad/nvim-colorizer.lua",
-  --   opts = overrides.colorizer,
-  -- },
+  {
+    "NvChad/nvim-colorizer.lua",
+    opts = overrides.nvim_colorizer,
+  },
 
   -- Install a plugin
   {
