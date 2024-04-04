@@ -165,7 +165,7 @@ local plugins = {
   {
     "kylechui/nvim-surround",
     version = "*", -- Use for stability; omit to use `main` branch for the latest features
-    event = "VeryLazy",
+    event = { "BufReadPre", "BufNewFile" },
     config = function()
       require("nvim-surround").setup {}
     end,
@@ -173,6 +173,7 @@ local plugins = {
 
   {
     "windwp/nvim-ts-autotag",
+    event = "InsertEnter",
     config = function()
       require("nvim-ts-autotag").setup()
     end,
