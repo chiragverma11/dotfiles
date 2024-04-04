@@ -149,4 +149,15 @@ M.treesj = {
   },
 }
 
+M.tabufline = {
+  plugin = true,
+  n = {
+    ["<leader>X"] = {
+      function()
+        require("nvchad.tabufline").closeAllBufs()
+      end,
+      "Close All Buffers",
+    },
+  },
+}
 return M
