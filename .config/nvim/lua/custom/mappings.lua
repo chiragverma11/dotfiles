@@ -194,4 +194,13 @@ M.tabufline = {
     },
   },
 }
+
+M.vimMaximizer = {
+  n = {
+    ["<leader>sm"] = {
+      "<cmd>MaximizerToggle<CR>",
+      "Maximize/minimize a split",
+    },
+  },
+}
 return M
