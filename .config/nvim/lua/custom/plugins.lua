@@ -204,6 +204,15 @@ local plugins = {
     end,
   },
 
+  {
+    "stevearc/dressing.nvim",
+    event = "VeryLazy",
+  },
+
+  {
+    "szw/vim-maximizer",
+    cmd = { "MaximizerToggle" },
+  },
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",
