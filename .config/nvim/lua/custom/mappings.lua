@@ -43,6 +43,40 @@ M.general = {
     ["<leader>Q"] = {
       ":qa!<CR>",
     },
+
+    -- Clear Search Highlights
+    ["<leader>nh"] = {
+      ":noh<CR>",
+      "Clear Search Highlights",
+    },
+
+    -- Increment/Decrement
+    ["<leader>+"] = {
+      "<C-a>",
+      "Increment number",
+    },
+    ["<leader>-"] = {
+      "<C-x>",
+      "Decrement number",
+    },
+
+    -- window management
+    ["<leader>sv"] = {
+      "<C-w>v",
+      "Split window vertically",
+    },
+    ["<leader>sh"] = {
+      "<C-w>s",
+      "Split window horizontally",
+    },
+    ["<leader>se"] = {
+      "<C-w>=",
+      "Make split windows equal width & height",
+    },
+    ["<leader>sx"] = {
+      "<cmd>close<CR>",
+      "Close current split window",
+    },
   },
 
   v = {
