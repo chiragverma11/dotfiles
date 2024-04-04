@@ -35,6 +35,11 @@ local plugins = {
     opts = overrides.nvim_colorizer,
   },
 
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    opts = overrides.blankline,
+  },
+
   -- Install a plugin
   {
     "max397574/better-escape.nvim",
