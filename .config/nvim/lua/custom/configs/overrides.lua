@@ -64,6 +64,9 @@ M.mason = {
 
     -- shell stuff
     "shfmt",
+
+    -- emmet stuff
+    "emmet-ls",
   },
 }
 
