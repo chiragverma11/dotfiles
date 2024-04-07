@@ -114,6 +114,9 @@ export XDG_CONFIG_HOME=$HOME/.config
 export XDG_STATE_HOME=$HOME/.local/state
 export XDG_CACHE_HOME=$HOME/.cache
 
+# Source Custom Keybinding File
+source ~/.my_keybindings
+
 # Source Custom Alias File
 source ~/.my_aliases
 
