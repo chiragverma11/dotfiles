@@ -77,6 +77,24 @@ M.general = {
       "<cmd>close<CR>",
       "Close current split window",
     },
+
+    -- Vim Tmux Navigator
+    ["<C-h>"] = {
+      "<cmd> TmuxNavigateLeft<CR>",
+      "Window left",
+    },
+    ["<C-j>"] = {
+      "<cmd> TmuxNavigateDown<CR>",
+      "Window down",
+    },
+    ["<C-k>"] = {
+      "<cmd> TmuxNavigateUp<CR>",
+      "Window up",
+    },
+    ["<C-l>"] = {
+      "<cmd> TmuxNavigateRight<CR>",
+      "Window right",
+    },
   },
 
   v = {
