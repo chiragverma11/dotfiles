@@ -100,14 +100,11 @@ local plugins = {
     opts = {
       sources = {
         { name = "nvim_lsp" },
-        { name = "path" },
         { name = "luasnip" },
         { name = "buffer" },
         { name = "nvim_lua" },
+        { name = "path" },
         { name = "cmdline" },
-      },
-      experimental = {
-        ghost_text = true,
       },
     },
 
@@ -128,7 +125,6 @@ local plugins = {
 
           -- `:` cmdline setup.
           cmp.setup.cmdline(":", {
-            mapping = cmp.mapping.preset.cmdline(),
             mapping = cmp.mapping.preset.cmdline {
               ["<CR>"] = {
                 c = function(default)
