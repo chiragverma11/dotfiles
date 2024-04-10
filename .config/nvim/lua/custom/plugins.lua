@@ -63,6 +63,7 @@ local plugins = {
         vim.api.nvim_set_hl(0, "RainbowCyan", { fg = "#56B6C2" })
       end)
 
+      vim.g.rainbow_delimiters = { highlight = highlight }
       require("ibl").setup {
         indent = { char = "▏" },
         scope = { highlight = highlight, show_exact_scope = false },
@@ -273,6 +274,33 @@ local plugins = {
   {
     "christoomey/vim-tmux-navigator",
     lazy = false,
+  },
+
+  {
+    "hiphish/rainbow-delimiters.nvim",
+    lazy = false,
+    -- event = "VeryLazy",
+    -- dependencies = { "nvim-treesitter/nvim-treesitter" },
+    config = function()
+      local rainbow_delimiters = require "rainbow-delimiters"
+
+      ---@type rainbow_delimiters.config
+      vim.g.rainbow_delimiters = {
+        strategy = {
+          [""] = rainbow_delimiters.strategy["global"],
+          commonlisp = rainbow_delimiters.strategy["local"],
+        },
+        query = {
+          [""] = "rainbow-delimiters",
+          lua = "rainbow-blocks",
+        },
+        priority = {
+          [""] = 110,
+          lua = 210,
+        },
+        blacklist = { "c", "cpp" },
+      }
+    end,
   },
 
   -- To make a plugin not be loaded
