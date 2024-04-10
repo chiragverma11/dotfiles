@@ -38,6 +38,15 @@ M.treesitter = {
     enable_close = true,
     enable_close_on_slash = true,
   },
+  incremental_selection = {
+    enable = true,
+    keymaps = {
+      init_selection = "gnn",
+      node_incremental = "grn",
+      scope_incremental = false,
+      node_decremental = "grm",
+    },
+  },
 }
 
 M.mason = {
