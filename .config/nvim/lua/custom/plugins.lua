@@ -309,6 +309,21 @@ local plugins = {
   },
 
   {
+    "utilyre/barbecue.nvim",
+    event = "BufEnter",
+    name = "barbecue",
+    version = "*",
+    dependencies = {
+      "SmiteshP/nvim-navic",
+      "nvim-tree/nvim-web-devicons", -- optional dependency
+    },
+    opts = {},
+    config = function(_, opts)
+      require("barbecue").setup(opts)
+    end,
+  },
+
+  {
     "JoosepAlviste/nvim-ts-context-commentstring",
     dependencies = { "numToStr/Comment.nvim" },
     opts = {
