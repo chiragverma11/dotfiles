@@ -324,6 +324,21 @@ local plugins = {
   },
 
   {
+    "OlegGulevskyy/better-ts-errors.nvim",
+    dependencies = { "MunifTanjim/nui.nvim" },
+    event = "VeryLazy",
+    opts = {
+      keymaps = {
+        toggle = "<leader>dd", -- Toggling keymap
+        go_to_definition = "<leader>dx", -- Go to problematic type from popup window
+      },
+    },
+    config = function(_, opts)
+      require("better-ts-errors").setup(opts)
+    end,
+  },
+
+  {
     "JoosepAlviste/nvim-ts-context-commentstring",
     dependencies = { "numToStr/Comment.nvim" },
     opts = {
