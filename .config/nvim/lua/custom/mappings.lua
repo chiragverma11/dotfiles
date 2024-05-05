@@ -221,4 +221,24 @@ M.vimMaximizer = {
     },
   },
 }
+
+M.nvimSpectre = {
+  n = {
+    ["<leader>sr"] = {
+      function()
+        require("spectre").open()
+      end,
+      "Replace in Files (Spectre)",
+    },
+  },
+}
+
+-- M.betterTsErrors = {
+--   n={
+-- ["<leader>dd"]= {
+--      ""
+--     }
+--   }
+-- }
+
 return M
