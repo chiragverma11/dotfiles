@@ -1,4 +1,21 @@
-# Custom aliases
-# Aliases to fix blurry windows in wayland
+## Some tmux-related shell aliases
+
+# Attaches tmux to the last session; creates a new session if none exists.
+alias t='tmux attach || tmux new-session'
+
+# Attaches tmux to a session (example: ta portal)
+alias ta='tmux attach -t'
+
+# Creates a new session
+alias tn='tmux new-session'
+
+# Lists all ongoing sessions
+alias tl='tmux list-sessions'
+
+
+## Aliases to fix blurry windows in wayland
 alias code="code --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland"
-alias tabby="tabby --enable-features=UseOzonePlatform --ozone-platform=wayland"
+
+
+## Aliases for lazygit
+alias lg="lazygit"
