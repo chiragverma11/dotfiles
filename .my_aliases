@@ -19,3 +19,7 @@ alias code="code --enable-features=UseOzonePlatform,WaylandWindowDecorations --o
 
 ## Aliases for lazygit
 alias lg="lazygit"
+
+
+## Aliases for sesh session manager
+alias seshf="sesh connect \$(sesh list | fzf)"
