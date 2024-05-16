@@ -66,11 +66,10 @@ local plugins = {
       vim.g.rainbow_delimiters = { highlight = highlight }
       require("ibl").setup {
         indent = { char = "▏" },
-        scope = { highlight = highlight, show_exact_scope = false },
+        scope = { highlight = highlight, show_exact_scope = false, show_end = false },
       }
 
       hooks.register(hooks.type.SCOPE_HIGHLIGHT, hooks.builtin.scope_highlight_from_extmark)
-      hooks.register(hooks.type.WHITESPACE, hooks.builtin.hide_first_space_indent_level)
     end,
   },
 
