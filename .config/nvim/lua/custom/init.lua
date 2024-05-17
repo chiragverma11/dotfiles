@@ -6,6 +6,8 @@ g.vscode_snippets_path = vim.fn.stdpath "config" .. "/lua/custom/snippets"
 
 -------------------------------------- options ------------------------------------------
 opt.relativenumber = true
+opt.breakindent = true
+opt.linebreak = true
 
 -------------------------------------- commands ------------------------------------------
 local new_cmd = vim.api.nvim_create_user_command
