@@ -403,6 +403,7 @@ local plugins = {
     event = "VeryLazy",
     opts = {
       background_colour = "#000000",
+      timeout = 3000,
     },
   },
 

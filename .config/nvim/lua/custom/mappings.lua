@@ -225,12 +225,15 @@ M.nvimSpectre = {
   },
 }
 
--- M.betterTsErrors = {
---   n={
--- ["<leader>dd"]= {
---      ""
---     }
---   }
--- }
+M.nvimNotify = {
+  n = {
+    ["<leader>dn"] = {
+      function()
+        require("notify").dismiss()
+      end,
+      "Dismiss all notifications",
+    },
+  },
+}
 
 return M
