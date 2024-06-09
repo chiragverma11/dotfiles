@@ -156,34 +156,28 @@ M.lspconfig = {
 M.trouble = {
   n = {
     ["<leader>tx"] = {
-      function()
-        require("trouble").toggle()
-      end,
-      "Toggle Trouble Menu",
+      "<cmd>Trouble diagnostics toggle<cr>",
+      "Diagnostics (Trouble)",
     },
-    ["<leader>tw"] = {
-      function()
-        require("trouble").toggle "workspace_diagnostics"
-      end,
-      "Toggle Workspace Diagnostics",
+    ["<leader>tb"] = {
+      "<cmd>Trouble diagnostics toggle filter.buf=0<cr>",
+      "Buffer Diagnostics (Trouble)",
     },
     ["<leader>td"] = {
-      function()
-        require("trouble").toggle "document_diagnostics"
-      end,
-      "Toggle Document Diagnostics",
+      "<cmd>Trouble symbols toggle focus=false<cr>",
+      "Symbols (Trouble)",
     },
     ["<leader>tl"] = {
-      function()
-        require("trouble").toggle "loclist"
-      end,
-      "Toggle List Diagnostics",
+      "<cmd>Trouble lsp toggle focus=false win.position=right<cr>",
+      "LSP Definitions / references / ... (Trouble)",
+    },
+    ["<leader>tL"] = {
+      "<cmd>Trouble loclist toggle<cr>",
+      "Location List (Trouble)",
     },
     ["<leader>tq"] = {
-      function()
-        require("trouble").toggle "quickfix"
-      end,
-      "Toggle Quickfix Diagnostics",
+      "<cmd>Trouble qflist toggle<cr>",
+      "Quickfix List (Trouble)",
     },
   },
 }

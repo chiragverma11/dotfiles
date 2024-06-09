@@ -220,15 +220,9 @@ local plugins = {
 
   {
     "folke/trouble.nvim",
-    event = "VeryLazy",
     dependencies = { "nvim-tree/nvim-web-devicons" },
-    opts = {
-      use_diagnostic_signs = true,
-      actions_keys = {
-        close = { "q", "<Esc>" },
-        cancel = "<C-e>",
-      },
-    },
+    cmd = "Trouble",
+    opts = {},
   },
 
   {
