@@ -114,15 +114,6 @@ export XDG_CONFIG_HOME=$HOME/.config
 export XDG_STATE_HOME=$HOME/.local/state
 export XDG_CACHE_HOME=$HOME/.cache
 
-# Source Custom Keybinding File
-source ~/.my_keybindings
-
-# Source Custom Alias File
-source ~/.my_aliases
-
-# eval "$(ssh-agent -s)"
-eval "$(zoxide init --cmd cd zsh)"
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
@@ -134,3 +125,18 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+# History
+HISTSIZE=10000
+HISTFILE=~/.zsh_history
+SAVEHIST=$HISTSIZE
+setopt append_history share_history hist_ignore_space hist_ignore_all_dups
+
+# Source Custom Keybinding File
+source ~/.my_keybindings
+
+# Source Custom Alias File
+source ~/.my_aliases
+
+# Shell Integrations
+# eval "$(ssh-agent -s)"
+eval "$(zoxide init --cmd cd zsh)"
