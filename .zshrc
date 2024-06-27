@@ -78,7 +78,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git aliases zsh-autosuggestions fast-syntax-highlighting zsh-autocomplete)
+plugins=(git aliases zsh-autosuggestions fast-syntax-highlighting zsh-autocomplete fzf-tab)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -131,6 +131,11 @@ HISTFILE=~/.zsh_history
 SAVEHIST=$HISTSIZE
 setopt append_history share_history hist_ignore_space hist_ignore_all_dups
 
+# Completion styling
+zstyle ':completion:*' menu no
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
+zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
+
 # Source Custom Keybinding File
 source ~/.my_keybindings
 
@@ -140,3 +145,5 @@ source ~/.my_aliases
 # Shell Integrations
 # eval "$(ssh-agent -s)"
 eval "$(zoxide init --cmd cd zsh)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
