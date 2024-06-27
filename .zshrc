@@ -147,3 +147,6 @@ source ~/.my_aliases
 eval "$(zoxide init --cmd cd zsh)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Rust Environment Setup
+source "$HOME/.cargo/env"
