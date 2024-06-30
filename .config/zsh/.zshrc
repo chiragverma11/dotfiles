@@ -108,15 +108,8 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# XDG_Variables
-export XDG_DATA_HOME=$HOME/.local/share
-export XDG_CONFIG_HOME=$HOME/.config
-export XDG_STATE_HOME=$HOME/.local/state
-export XDG_CACHE_HOME=$HOME/.cache
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
+[[ ! -f $ZDOTDIR/.p10k.zsh ]] || source $ZDOTDIR/.p10k.zsh
 # pnpm
 export PNPM_HOME="/home/chirag/.local/share/pnpm"
 case ":$PATH:" in
@@ -127,7 +120,7 @@ esac
 
 # History
 HISTSIZE=10000
-HISTFILE=~/.zsh_history
+HISTFILE="${ZDATADIR}/.zsh_history"
 SAVEHIST=$HISTSIZE
 setopt append_history share_history hist_ignore_space hist_ignore_all_dups
 
@@ -136,17 +129,12 @@ zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
-# Source Custom Keybinding File
-source ~/.my_keybindings
-
-# Source Custom Alias File
-source ~/.my_aliases
+# Load custom keybindings and aliases
+source "${ZDOTDIR}/.my_keybindings"
+source "${ZDOTDIR}/.my_aliases"
 
 # Shell Integrations
 # eval "$(ssh-agent -s)"
 eval "$(zoxide init --cmd cd zsh)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# Rust Environment Setup
-source "$HOME/.cargo/env"
