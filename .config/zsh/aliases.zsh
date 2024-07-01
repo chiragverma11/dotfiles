@@ -24,5 +24,17 @@ alias lg="lazygit"
 ## Aliases for sesh session manager
 alias seshf="sesh connect \$(sesh list | fzf)"
 
+## Alias ls to eza if eza is installed
+if command -v eza > /dev/null 2>&1; then
+    alias ls="eza"
+    alias l.="eza -d .*"
+    alias la="eza -a"
+    alias lla="eza -la"
+    alias ll="eza -l"
+    unalias l 2>/dev/null
+    unalias lsa 2>/dev/null
+fi
+
 ## General Aliases
 alias c="clear"
+alias open="xdg-open"
