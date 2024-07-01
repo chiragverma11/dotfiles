@@ -38,8 +38,8 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Load custom keybindings and aliases
-source "${ZDOTDIR}/.my_keybindings"
-source "${ZDOTDIR}/.my_aliases"
+source "$ZDOTDIR/keybinds.zsh"
+source "$ZDOTDIR/aliases.zsh"
 
 # Shell Integrations
 eval "$(zoxide init --cmd cd zsh)"
