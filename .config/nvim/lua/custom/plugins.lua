@@ -21,7 +21,7 @@ local plugins = {
 
   {
     "nvim-treesitter/nvim-treesitter",
-    dependencies = { "windwp/nvim-ts-autotag" },
+    dependencies = { "nvim-treesitter/playground" },
     opts = overrides.treesitter,
   },
 
