@@ -113,16 +113,16 @@ local plugins = {
   {
     "hrsh7th/nvim-cmp",
 
-    -- add cmdline src here
-    -- sources is a list table so we have to write full table, unlike in key/val tables
     opts = {
       sources = {
         { name = "nvim_lsp" },
-        { name = "luasnip" },
-        { name = "buffer" },
-        { name = "nvim_lua" },
-        { name = "path" },
-        { name = "cmdline" },
+        { name = "luasnip", keyword_length = 2, max_item_count = 6 },
+        { name = "buffer", keyword_length = 3, max_item_count = 6, group_index = 2 },
+        { name = "path", keyword_length = 1 },
+        { name = "nvim_lua", keyword_length = 1 },
+      },
+      completion = {
+        keyword_length = 1,
       },
     },
 
