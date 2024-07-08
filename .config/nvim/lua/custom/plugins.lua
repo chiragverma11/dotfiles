@@ -236,9 +236,9 @@ local plugins = {
 
   {
     "windwp/nvim-ts-autotag",
-    event = "InsertEnter",
-    config = function()
-      require("nvim-ts-autotag").setup()
+    event = { "BufReadPre", "BufNewFile" },
+    config = function(_, opts)
+      require("nvim-ts-autotag").setup(opts)
     end,
   },
 
