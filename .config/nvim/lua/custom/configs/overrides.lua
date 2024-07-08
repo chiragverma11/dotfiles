@@ -70,7 +70,6 @@ M.mason = {
     "shfmt",
 
     -- emmet stuff
-    "emmet-ls",
   },
 }
 
