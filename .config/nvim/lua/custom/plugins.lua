@@ -276,6 +276,12 @@ local plugins = {
   },
 
   {
+    "kevinhwang91/nvim-bqf",
+    event = "VeryLazy",
+    opts = {},
+  },
+
+  {
     "hiphish/rainbow-delimiters.nvim",
     lazy = false,
     -- event = "VeryLazy",
@@ -333,6 +339,11 @@ local plugins = {
   },
 
   {
+    "sindrets/diffview.nvim",
+    event = "VeryLazy",
+  },
+
+  {
     "folke/flash.nvim",
     event = "VeryLazy",
     ---@type Flash.Config
@@ -379,6 +390,8 @@ local plugins = {
         desc = "Toggle Flash Search",
       },
     },
+
+    -- Similar Plugins -> Bekaboo/dropbar.nvim
   },
 
   {
@@ -396,6 +409,13 @@ local plugins = {
     "nvim-pack/nvim-spectre",
     cmd = "Spectre",
     opts = { open_cmd = "noswapfile vnew" },
+  },
+
+  {
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    event = "VeryLazy",
+    opts = {},
   },
 
   {
@@ -448,6 +468,24 @@ local plugins = {
         long_message_to_split = true, -- long messages will be sent to a split
         inc_rename = true, -- enables an input dialog for inc-rename.nvim
         lsp_doc_border = true, -- add a border to hover docs and signature help
+      },
+    },
+  },
+
+  {
+    "smoka7/multicursors.nvim",
+    event = "VeryLazy",
+    dependencies = {
+      "smoka7/hydra.nvim",
+    },
+    opts = {},
+    cmd = { "MCstart", "MCvisual", "MCclear", "MCpattern", "MCvisualPattern", "MCunderCursor" },
+    keys = {
+      {
+        mode = { "v", "n" },
+        "<Leader>m",
+        "<cmd>MCstart<cr>",
+        desc = "Create a selection for selected text or word under the cursor",
       },
     },
   },
@@ -515,21 +553,9 @@ local plugins = {
       opts["fold_virt_text_handler"] = handler
       require("ufo").setup(opts)
     end,
+
+    -- Similar Plugins -> smoka7/hop.nvim
   },
-
-  -- To make a plugin not be loaded
-  -- {
-  --   "NvChad/nvim-colorizer.lua",
-  --   enabled = false
-  -- },
-
-  -- All NvChad plugins are lazy-loaded by default
-  -- For a plugin to be loaded, you will need to set either `ft`, `cmd`, `keys`, `event`, or set `lazy = false`
-  -- If you want a plugin to load on startup, add `lazy = false` to a plugin spec, for example
-  -- {
-  --   "mg979/vim-visual-multi",
-  --   lazy = false,
-  -- }
 }
 
 return plugins
