@@ -1,3 +1,5 @@
+require "nvchad.options"
+
 local opt = vim.opt
 local g = vim.g
 
@@ -10,10 +12,10 @@ opt.breakindent = true
 opt.linebreak = true
 
 -------------------------------------- commands ------------------------------------------
-local new_cmd = vim.api.nvim_create_user_command
+local autocmd = vim.api.nvim_create_user_command
 
 -- Commands to enable/disable autoformat-on-save
-new_cmd("FormatDisable", function(args)
+autocmd("FormatDisable", function(args)
   if args.bang then
     -- FormatDisable! will disable formatting just for this buffer
     vim.b.disable_autoformat = true
@@ -25,17 +27,12 @@ end, {
   bang = true,
 })
 
-new_cmd("FormatEnable", function()
+autocmd("FormatEnable", function()
   vim.b.disable_autoformat = false
   vim.g.disable_autoformat = false
 end, {
   desc = "Re-enable autoformat-on-save",
 })
 
--- local autocmd = vim.api.nvim_create_autocmd
-
--- Auto resize panes when resizing nvim window
--- autocmd("VimResized", {
---   pattern = "*",
---   command = "tabdo wincmd =",
--- })
+-- to sort diagnostics(virtual_text/floating) based on severity
+vim.diagnostic.config { severity_sort = true }

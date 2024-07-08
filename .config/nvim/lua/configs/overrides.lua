@@ -32,12 +32,6 @@ M.treesitter = {
     enable = true,
     use_languagetree = true,
   },
-  autotag = {
-    enable = true,
-    enable_rename = true,
-    enable_close = true,
-    enable_close_on_slash = true,
-  },
   incremental_selection = {
     enable = true,
     keymaps = {
@@ -88,6 +82,7 @@ M.mason = {
     "shfmt",
 
     -- emmet stuff
+    "emmet-language-server",
   },
 }
 
@@ -115,6 +110,29 @@ M.nvim_colorizer = {
   user_default_options = {
     tailwind = true,
   },
+}
+
+M.gitsigns = {
+  signs = {
+    add = { text = "┃" },
+    change = { text = "┃" },
+    delete = { text = "󰍵" },
+    topdelete = { text = "‾" },
+    changedelete = { text = "~" },
+    untracked = { text = "┃" },
+  },
+
+  -- Left aligned signs
+  -- signs = {
+  --   add = { text = "▍" },
+  --   change = { text = "▍" },
+  --   delete = { text = "󰍵" },
+  --   topdelete = { text = "‾" },
+  --   changedelete = { text = "~" },
+  --   untracked = { text = "▍" },
+  -- },
+
+  -- Signs options -> ┃ ▍‾ ▔
 }
 
 return M
