@@ -7,7 +7,7 @@ fi
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH="$XDG_DATA_HOME/oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Oh-My-Zsh Plugins
