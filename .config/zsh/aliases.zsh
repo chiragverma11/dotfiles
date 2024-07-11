@@ -35,6 +35,9 @@ if command -v eza > /dev/null 2>&1; then
     unalias lsa 2>/dev/null
 fi
 
+## Fzf preview with bat
+alias fpb="fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}'"
+
 ## General Aliases
 alias c="clear"
 alias open="xdg-open"
