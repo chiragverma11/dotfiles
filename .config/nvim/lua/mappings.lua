@@ -18,6 +18,35 @@ end, { desc = "General " .. "Toggle transparency" })
 map("v", "<", "<gv", { desc = "General " .. "Dedent", silent = true })
 map("v", ">", ">gv", { desc = "General " .. "Indent", silent = true })
 
+-- Move
+map(
+  { "n", "x" },
+  "j",
+  'v:count || mode(1)[0:1] == "no" ? "j" : "gj"',
+  { desc = "Move down", noremap = true, expr = true }
+)
+
+map(
+  { "n", "x" },
+  "k",
+  'v:count || mode(1)[0:1] == "no" ? "k" : "gk"',
+  { desc = "Move up", noremap = true, expr = true }
+)
+
+map(
+  { "n", "v" },
+  "<Up>",
+  'v:count || mode(1)[0:1] == "no" ? "k" : "gk"',
+  { desc = "Move up", noremap = true, expr = true }
+)
+
+map(
+  { "n", "v" },
+  "<Down>",
+  'v:count || mode(1)[0:1] == "no" ? "j" : "gj"',
+  { desc = "Move down", noremap = true, expr = true }
+)
+
 -- Move Lines
 map("n", "<A-j>", ":m .+1<CR>==", { desc = "Move line down", silent = true })
 map("n", "<A-k>", ":m .-2<CR>==", { desc = "Move line up", silent = true })
@@ -41,6 +70,11 @@ map("n", "<leader>tp", ":tabp<CR>", { desc = "Tab " .. "Previous Tab" })
 
 -- Git
 map("n", "<leader>gg", ":LazyGit<CR>", { desc = "Git " .. "Open Lazygit" })
+
+-- Comment
+map("i", "<C-_>", function()
+  require("Comment.api").toggle.linewise.current()
+end, { desc = "Comment toggle", silent = true })
 
 -- Split Management
 map("n", "<leader>sv", "<C-w>v", { desc = "Split " .. "Split Window Vertically" })
