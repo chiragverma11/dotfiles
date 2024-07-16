@@ -19,6 +19,9 @@ M.ui = {
   tabufline = {
     order = { "buffers", "tabs", "btns", "treeOffset" },
   },
+  statusline = {
+    theme = "minimal",
+  },
 }
 
 return M
