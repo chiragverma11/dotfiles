@@ -8,8 +8,8 @@ M.ui = {
   theme = "github_dark",
 
   hl_add = {
-    DiagnosticUnderlineError = { sp = "#ef5350", undercurl = true },
-    DiagnosticUnderlineWarn = { sp = "#f4d03f", undercurl = true },
+    DiagnosticUnderlineError = { sp = "red", undercurl = true },
+    DiagnosticUnderlineWarn = { sp = "yellow", undercurl = true },
   },
 
   hl_override = {
