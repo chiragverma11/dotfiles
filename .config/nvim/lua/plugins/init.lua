@@ -102,6 +102,11 @@ local plugins = {
     end,
   },
 
+  {
+    "nvim-tree/nvim-tree.lua",
+    opts = overrides.nvim_tree,
+  },
+
   -- Install a plugin
   {
     "max397574/better-escape.nvim",
