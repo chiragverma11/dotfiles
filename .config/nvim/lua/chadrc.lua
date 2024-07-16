@@ -15,6 +15,10 @@ M.ui = {
   hl_override = {
     FoldColumn = { bg = "NONE" },
   },
+
+  tabufline = {
+    order = { "buffers", "tabs", "btns", "treeOffset" },
+  },
 }
 
 return M

@@ -135,4 +135,13 @@ M.gitsigns = {
   -- Signs options -> ┃ ▍‾ ▔
 }
 
+M.nvim_tree = {
+  view = {
+    width = 35,
+    side = "right",
+    number = true,
+    relativenumber = true,
+  },
+}
+
 return M
