@@ -93,6 +93,7 @@ local plugins = {
 
   {
     "numToStr/Comment.nvim",
+    event = "BufReadPost",
     dependencies = { "JoosepAlviste/nvim-ts-context-commentstring" },
     config = function()
       require("Comment").setup {
