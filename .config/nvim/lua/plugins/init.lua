@@ -420,15 +420,6 @@ local plugins = {
     opts = {},
   },
 
-  -- {
-  --   "rcarriga/nvim-notify",
-  --   event = "VeryLazy",
-  --   opts = {
-  --     background_colour = "#000000",
-  --     timeout = 3000,
-  --   },
-  -- },
-
   {
     "folke/noice.nvim",
     event = "VeryLazy",
