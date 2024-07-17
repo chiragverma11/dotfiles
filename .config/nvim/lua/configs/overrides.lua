@@ -144,4 +144,16 @@ M.nvim_tree = {
   },
 }
 
+M.rainbow_delimiters = {
+  highlight = {
+    "RainbowRed",
+    "RainbowYellow",
+    "RainbowBlue",
+    "RainbowOrange",
+    "RainbowGreen",
+    "RainbowViolet",
+    "RainbowCyan",
+  },
+}
+
 return M

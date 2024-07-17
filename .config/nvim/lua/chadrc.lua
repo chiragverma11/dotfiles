@@ -10,6 +10,15 @@ M.ui = {
   hl_add = {
     DiagnosticUnderlineError = { sp = "red", undercurl = true },
     DiagnosticUnderlineWarn = { sp = "yellow", undercurl = true },
+
+    -- rainbow delimiters
+    RainbowRed = { fg = "red" },
+    RainbowYellow = { fg = "sun" },
+    RainbowBlue = { fg = "blue" },
+    RainbowOrange = { fg = "orange" },
+    RainbowGreen = { fg = "vibrant_green" },
+    RainbowViolet = { fg = "dark_purple" },
+    RainbowCyan = { fg = "cyan" },
   },
 
   hl_override = {

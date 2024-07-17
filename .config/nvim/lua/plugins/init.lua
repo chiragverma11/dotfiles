@@ -50,33 +50,12 @@ local plugins = {
     event = "User FilePost",
     main = "ibl",
     config = function()
-      local highlight = {
-        "RainbowRed",
-        "RainbowYellow",
-        "RainbowBlue",
-        "RainbowOrange",
-        "RainbowGreen",
-        "RainbowViolet",
-        "RainbowCyan",
-      }
       local hooks = require "ibl.hooks"
-      -- create the highlight groups in the highlight setup hook, so they are reset
-      -- every time the colorscheme changes
-      hooks.register(hooks.type.HIGHLIGHT_SETUP, function()
-        vim.api.nvim_set_hl(0, "RainbowRed", { fg = "#E06C75" })
-        vim.api.nvim_set_hl(0, "RainbowYellow", { fg = "#E5C07B" })
-        vim.api.nvim_set_hl(0, "RainbowBlue", { fg = "#61AFEF" })
-        vim.api.nvim_set_hl(0, "RainbowOrange", { fg = "#D19A66" })
-        vim.api.nvim_set_hl(0, "RainbowGreen", { fg = "#98C379" })
-        vim.api.nvim_set_hl(0, "RainbowViolet", { fg = "#C678DD" })
-        vim.api.nvim_set_hl(0, "RainbowCyan", { fg = "#56B6C2" })
-      end)
 
-      vim.g.rainbow_delimiters = { highlight = highlight }
       require("ibl").setup {
         indent = { char = "▏" },
         scope = {
-          highlight = highlight,
+          highlight = overrides.rainbow_delimiters.highlight,
           show_exact_scope = false,
           show_end = false,
           include = {
@@ -108,6 +87,36 @@ local plugins = {
   },
 
   -- Install a plugin
+
+  {
+    "hiphish/rainbow-delimiters.nvim",
+    lazy = false,
+    config = function()
+      local rainbow_delimiters = require "rainbow-delimiters"
+
+      ---@type rainbow_delimiters.config
+      vim.g.rainbow_delimiters = {
+        strategy = {
+          [""] = rainbow_delimiters.strategy["global"],
+          commonlisp = rainbow_delimiters.strategy["local"],
+        },
+        query = {
+          [""] = "rainbow-delimiters",
+          lua = "rainbow-blocks",
+          javascript = "rainbow-parens",
+          typescript = "rainbow-parens",
+          tsx = "rainbow-parens",
+        },
+        priority = {
+          [""] = 110,
+          lua = 210,
+        },
+        highlight = overrides.rainbow_delimiters.highlight,
+        blacklist = { "c", "cpp" },
+      }
+    end,
+  },
+
   {
     "max397574/better-escape.nvim",
     event = "InsertEnter",
@@ -300,33 +309,6 @@ local plugins = {
     "kevinhwang91/nvim-bqf",
     event = "VeryLazy",
     opts = {},
-  },
-
-  {
-    "hiphish/rainbow-delimiters.nvim",
-    lazy = false,
-    -- event = "VeryLazy",
-    -- dependencies = { "nvim-treesitter/nvim-treesitter" },
-    config = function()
-      local rainbow_delimiters = require "rainbow-delimiters"
-
-      ---@type rainbow_delimiters.config
-      vim.g.rainbow_delimiters = {
-        strategy = {
-          [""] = rainbow_delimiters.strategy["global"],
-          commonlisp = rainbow_delimiters.strategy["local"],
-        },
-        query = {
-          [""] = "rainbow-delimiters",
-          lua = "rainbow-blocks",
-        },
-        priority = {
-          [""] = 110,
-          lua = 210,
-        },
-        blacklist = { "c", "cpp" },
-      }
-    end,
   },
 
   {
