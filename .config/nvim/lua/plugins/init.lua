@@ -21,7 +21,6 @@ local plugins = {
 
   {
     "nvim-treesitter/nvim-treesitter",
-    dependencies = { "nvim-treesitter/playground" },
     opts = overrides.treesitter,
   },
 
