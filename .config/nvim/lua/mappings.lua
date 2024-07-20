@@ -8,7 +8,7 @@ map({ "n", "v" }, "<C-s>", ":w<CR>", { desc = "General " .. "Save File", silent 
 map("i", "<C-s>", "<Esc>:w<CR>a", { desc = "General " .. "Save File", silent = true })
 
 map("n", "<leader>fm", function()
-  require("conform").format { async = true, lsp_fallback = true }
+  require("conform").format { async = true, lsp_format = "fallback" }
 end, { desc = "General " .. "Format with conform" })
 
 map("n", "<leader>tt", function()

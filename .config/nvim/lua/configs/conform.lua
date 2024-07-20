@@ -1,6 +1,6 @@
 --type conform.options
 local options = {
-  lsp_fallback = true,
+  lsp_format = "fallback",
 
   formatters_by_ft = {
     lua = { "stylua" },
