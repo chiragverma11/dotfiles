@@ -1,0 +1,7 @@
+gui:
+  mainPanelSplitMode: horizontal
+  enlargedSideViewLocation: top
+  nerdFontsVersion: "3"
+  theme:
+    selectedLineBgColor:
+      - "#1A3636"
