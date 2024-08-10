@@ -5,29 +5,27 @@ local options = {
   formatters_by_ft = {
     lua = { "stylua" },
 
-    javascript = { { "prettierd", "prettier" } },
-    typescript = { { "prettierd", "prettier" } },
+    javascript = { "prettierd", "prettier", stop_after_first = true },
+    typescript = { "prettierd", "prettier", stop_after_first = true },
 
-    javascriptreact = { { "prettierd", "prettier" } },
-    typescriptreact = { { "prettierd", "prettier" } },
+    javascriptreact = { "prettierd", "prettier", stop_after_first = true },
+    typescriptreact = { "prettierd", "prettier", stop_after_first = true },
 
-    css = { { "prettierd", "prettier" } },
-    scss = { { "prettierd", "prettier" } },
-    less = { { "prettierd", "prettier" } },
-    html = { { "prettierd", "prettier" } },
+    css = { "prettierd", "prettier", stop_after_first = true },
+    scss = { "prettierd", "prettier", stop_after_first = true },
+    less = { "prettierd", "prettier", stop_after_first = true },
+    html = { "prettierd", "prettier", stop_after_first = true },
 
-    json = { { "prettierd", "prettier" } },
-    jsonc = { { "prettierd", "prettier" } },
-    yaml = { { "prettierd", "prettier" } },
-    markdown = { { "prettierd", "prettier" } },
-    ["markdown.mdx"] = { { "prettierd", "prettier" } },
-    graphql = { { "prettierd", "prettier" } },
+    json = { "prettierd", "prettier", stop_after_first = true },
+    jsonc = { "prettierd", "prettier", stop_after_first = true },
+    yaml = { "prettierd", "prettier", stop_after_first = true },
+    markdown = { "prettierd", "prettier", stop_after_first = true },
+    ["markdown.mdx"] = { "prettierd", "prettier", stop_after_first = true },
+    graphql = { "prettierd", "prettier", stop_after_first = true },
 
     sh = { "shfmt" },
   },
 
-  -- adding same formatter for multiple filetypes can look too much work for some
-  -- instead of the above code you could just use a loop! the config is just a table after all!
 
   format_on_save = function(bufnr)
     -- Disable with a global or buffer-local variable
