@@ -4,8 +4,9 @@
 ---@type ChadrcConfig
 local M = {}
 
-M.ui = {
-  theme = "github_dark",
+M.base46 = {
+  theme = "tokyonight",
+  transparency = false,
 
   hl_add = {
     DiagnosticUnderlineError = { sp = "red", undercurl = true },
@@ -24,10 +25,13 @@ M.ui = {
   hl_override = {
     FoldColumn = { bg = "NONE" },
   },
+}
 
+M.ui = {
   tabufline = {
     order = { "buffers", "tabs", "btns", "treeOffset" },
   },
+
   statusline = {
     theme = "minimal",
   },
