@@ -65,6 +65,11 @@ M.mason = {
 
     -- emmet stuff
     "emmet-language-server",
+
+    -- markdown stuff
+    "marksman",
+    "markdownlint-cli2",
+    "markdown-toc",
   },
 }
 
