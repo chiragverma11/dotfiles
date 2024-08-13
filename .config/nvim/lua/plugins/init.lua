@@ -492,7 +492,7 @@ local plugins = {
         mode = { "v", "n" },
         "<Leader>m",
         "<cmd>MCstart<cr>",
-        desc = "Create a selection for selected text or word under the cursor",
+        desc = "Start multicursor",
       },
     },
   },
