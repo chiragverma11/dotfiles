@@ -438,10 +438,10 @@ local plugins = {
           },
           hover = {
             enabled = true,
-            silent = false,
+            silent = true,
           },
           signature = {
-            enabled = true,
+            enabled = false,
           },
         },
         routes = {
