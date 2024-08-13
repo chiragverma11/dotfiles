@@ -323,7 +323,7 @@ local plugins = {
   {
     "OlegGulevskyy/better-ts-errors.nvim",
     dependencies = { "MunifTanjim/nui.nvim" },
-    event = "VeryLazy",
+    ft = { "typescript", "typescriptreact", "typescript.tsx" },
     opts = {
       keymaps = {
         toggle = "<leader>dd", -- Toggling keymap
