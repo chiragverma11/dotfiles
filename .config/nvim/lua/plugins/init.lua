@@ -26,7 +26,7 @@ local plugins = {
 
   {
     "nvim-tree/nvim-tree.lua",
-    opts = overrides.nvimtree,
+    opts = overrides.nvim_tree,
   },
 
   {
@@ -78,11 +78,6 @@ local plugins = {
         pre_hook = require("ts_context_commentstring.integrations.comment_nvim").create_pre_hook(),
       }
     end,
-  },
-
-  {
-    "nvim-tree/nvim-tree.lua",
-    opts = overrides.nvim_tree,
   },
 
   -- Install a plugin
