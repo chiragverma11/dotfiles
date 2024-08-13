@@ -269,7 +269,7 @@ local plugins = {
   {
     "folke/zen-mode.nvim",
     cmd = {
-      "Zenmode",
+      "ZenMode",
     },
   },
 
