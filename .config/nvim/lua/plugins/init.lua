@@ -330,9 +330,6 @@ local plugins = {
         go_to_definition = "<leader>dx", -- Go to problematic type from popup window
       },
     },
-    config = function(_, opts)
-      require("better-ts-errors").setup(opts)
-    end,
   },
 
   {
