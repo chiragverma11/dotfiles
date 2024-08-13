@@ -459,6 +459,12 @@ local plugins = {
             },
             view = "mini",
           },
+          {
+            -- enable showmode filter for macros messages
+            -- https://github.com/folke/noice.nvim/wiki/A-Guide-to-Messages#showmode
+            view = "notify",
+            filter = { event = "msg_showmode" },
+          },
         },
         presets = {
           command_palette = true, -- position the cmdline and popupmenu together
