@@ -6,8 +6,8 @@ return {
     ft = { "typescript", "typescriptreact", "typescript.tsx" },
     opts = {
       keymaps = {
-        toggle = "<leader>dd", -- Toggling keymap
-        go_to_definition = "<leader>dx", -- Go to problematic type from popup window
+        toggle = "<leader>ld", -- Toggling keymap
+        go_to_definition = "<leader>lx", -- Go to problematic type from popup window
       },
     },
   },

@@ -1,6 +1,7 @@
 require "nvchad.mappings"
 
 local map = vim.keymap.set
+local del = vim.keymap.del
 
 -- General
 map({ "n", "v" }, "<C-s>", ":w<CR>", { desc = "General " .. "Save File", silent = true })
@@ -127,7 +128,7 @@ map("n", "<leader>tL", ":Trouble loclist toggle<CR>", { desc = "Trouble " .. "Lo
 map("n", "<leader>tq", ":Trouble qflist toggle<CR>", { desc = "Trouble " .. "Quickfix List" })
 
 -- TreeSJ
-map("n", "<leader>mt", function()
+map("n", "<leader>sj", function()
   require("treesj").toggle()
 end, { desc = "TreeSJ " .. "Toggle Split Join" })
 
@@ -145,7 +146,9 @@ map("n", "<leader>sr", function()
 end, { desc = "NvimSpectre " .. "Replace in Files" })
 
 -- NvimNotify
-map("n", "<leader>dn", function()
+del("n", "<leader>n")
+
+map("n", "<leader>nd", function()
   require("notify").dismiss()
 end, { desc = "NvimNotify " .. "Dismiss all notifications" })
 
