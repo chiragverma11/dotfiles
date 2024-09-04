@@ -26,6 +26,20 @@ fi
 [[ ! -f $ZDOTDIR/.p10k.zsh ]] || source $ZDOTDIR/.p10k.zsh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 
+# https://github.com/zsh-users/zsh-autosuggestions/issues/238#issuecomment-389324291
+# This speeds up pasting w/ autosuggest
+# Disable zsh-autocompletion on paste
+pasteinit() {
+  OLD_SELF_INSERT=${${(s.:.)widgets[self-insert]}[2,3]}
+  zle -N self-insert url-quote-magic # I wonder if you'd need `.url-quote-magic`?
+}
+
+pastefinish() {
+  zle -N self-insert $OLD_SELF_INSERT
+}
+zstyle :bracketed-paste-magic paste-init pasteinit
+zstyle :bracketed-paste-magic paste-finish paste-finish
+
 # History
 HISTSIZE=10000
 HISTFILE="${ZDATADIR}/.zsh_history"
