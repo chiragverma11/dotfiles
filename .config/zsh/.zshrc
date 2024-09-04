@@ -40,6 +40,9 @@ pastefinish() {
 zstyle :bracketed-paste-magic paste-init pasteinit
 zstyle :bracketed-paste-magic paste-finish paste-finish
 
+# https://github.com/zsh-users/zsh-autosuggestions/issues/351#issuecomment-1116146362
+DISABLE_MAGIC_FUNCTIONS=true
+
 # History
 HISTSIZE=10000
 HISTFILE="${ZDATADIR}/.zsh_history"
@@ -51,9 +54,10 @@ zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
-# Load custom keybindings and aliases
+# Load custom keybindings, aliases and functions
 source "$ZDOTDIR/keybinds.zsh"
 source "$ZDOTDIR/aliases.zsh"
+source "$ZDOTDIR/functions.zsh"
 
 # Shell Integrations
 eval "$(zoxide init --cmd cd zsh)"
@@ -65,3 +69,10 @@ case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
+
+# Java configuration
+export JAVA_HOME="$HOME/.jdks/openjdk-22.0.1"
+export PATH="$JAVA_HOME/bin:$PATH"
+
+# Spicetify configuration
+export PATH=$PATH:/home/chirag/.spicetify
