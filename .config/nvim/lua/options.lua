@@ -4,7 +4,7 @@ local opt = vim.opt
 local g = vim.g
 
 -------------------------------------- globals -----------------------------------------
-g.vscode_snippets_path = vim.fn.stdpath "config" .. "/lua/custom/snippets"
+g.vscode_snippets_path = vim.fn.stdpath "config" .. "/lua/snippets"
 
 -------------------------------------- options ------------------------------------------
 opt.relativenumber = true
