@@ -1,2 +1,5 @@
 ### zsh
 /.config/zsh/.zcompdump-*
+
+### backups
+*.bak
