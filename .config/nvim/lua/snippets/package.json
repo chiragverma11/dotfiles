@@ -1,19 +1,19 @@
 {
-	"name": "custom-snippets",
-	"contributes": {
-		"snippets": [
-			{
-				"language": [
-					"all"
-				],
-				"path": "./snippets/all.json"
-			},
-			{
-				"language": [
-					"typescriptreact"
-				],
-				"path": "./typescriptreact.json"
-			}
-		]
-	}
+  "name": "custom-snippets",
+  "contributes": {
+    "snippets": [
+      {
+        "language": [
+          "all"
+        ],
+        "path": "./all.json"
+      },
+      {
+        "language": [
+          "typescriptreact"
+        ],
+        "path": "./typescriptreact.json"
+      }
+    ]
+  }
 }
