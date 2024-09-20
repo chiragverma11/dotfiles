@@ -6,7 +6,7 @@ local M = {}
 
 M.base46 = {
   theme = "tokyonight",
-  transparency = false,
+  transparency = true,
 
   hl_add = {
     DiagnosticUnderlineError = { sp = "red", undercurl = true },
