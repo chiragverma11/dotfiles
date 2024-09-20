@@ -8,7 +8,7 @@ local servers = {
   cssls = {},
   ts_ls = {},
   tailwindcss = {},
-  eslint = {},
+  eslint = { disabled = true }, -- using eslind_d instead of eslint
   prismals = {},
   marksman = {},
   dockerls = {},

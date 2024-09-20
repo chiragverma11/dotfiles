@@ -59,6 +59,7 @@ M.mason = {
     "eslint-lsp",
     "json-lsp",
     "prisma-language-server",
+    "eslint_d",
 
     -- shell stuff
     "shfmt",
