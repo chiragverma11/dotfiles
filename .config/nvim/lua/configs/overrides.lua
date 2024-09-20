@@ -70,6 +70,11 @@ M.mason = {
     "marksman",
     "markdownlint-cli2",
     "markdown-toc",
+
+    -- docker stuff
+    "hadolint",
+    "docker-compose-language-service",
+    "dockerfile-language-server",
   },
 }
 
