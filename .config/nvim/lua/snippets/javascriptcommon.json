@@ -1,0 +1,8 @@
+{
+  "commentBigBlock": {
+    "key": "commentBigBlock",
+    "prefix": "cmmb",
+    "body": ["/**", " * ${1:first}", " */"],
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  }
+}
