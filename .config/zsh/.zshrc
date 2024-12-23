@@ -29,19 +29,19 @@ fi
 # https://github.com/zsh-users/zsh-autosuggestions/issues/238#issuecomment-389324291
 # This speeds up pasting w/ autosuggest
 # Disable zsh-autocompletion on paste
-pasteinit() {
-  OLD_SELF_INSERT=${${(s.:.)widgets[self-insert]}[2,3]}
-  zle -N self-insert url-quote-magic # I wonder if you'd need `.url-quote-magic`?
-}
-
-pastefinish() {
-  zle -N self-insert $OLD_SELF_INSERT
-}
-zstyle :bracketed-paste-magic paste-init pasteinit
-zstyle :bracketed-paste-magic paste-finish paste-finish
-
-# https://github.com/zsh-users/zsh-autosuggestions/issues/351#issuecomment-1116146362
-DISABLE_MAGIC_FUNCTIONS=true
+# pasteinit() {
+#   OLD_SELF_INSERT=${${(s.:.)widgets[self-insert]}[2,3]}
+#   zle -N self-insert url-quote-magic # I wonder if you'd need `.url-quote-magic`?
+# }
+#
+# pastefinish() {
+#   zle -N self-insert $OLD_SELF_INSERT
+# }
+# zstyle :bracketed-paste-magic paste-init pasteinit
+# zstyle :bracketed-paste-magic paste-finish paste-finish
+#
+# # https://github.com/zsh-users/zsh-autosuggestions/issues/351#issuecomment-1116146362
+# DISABLE_MAGIC_FUNCTIONS=true
 
 # History
 HISTSIZE=10000
