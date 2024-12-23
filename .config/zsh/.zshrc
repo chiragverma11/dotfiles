@@ -11,7 +11,7 @@ export ZSH="$XDG_DATA_HOME/oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Oh-My-Zsh Plugins
-plugins=(git aliases zsh-autosuggestions fast-syntax-highlighting zsh-autocomplete fzf-tab)
+plugins=(git aliases zsh-autosuggestions fast-syntax-highlighting zsh-autocomplete fzf-tab zsh-vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
