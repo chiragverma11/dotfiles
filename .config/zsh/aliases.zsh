@@ -14,7 +14,8 @@ alias tl='tmux list-sessions'
 
 
 ## Aliases to fix blurry windows in wayland
-alias code="code --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland"
+# example:
+# alias code="code --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland"
 
 
 ## Aliases for lazygit
