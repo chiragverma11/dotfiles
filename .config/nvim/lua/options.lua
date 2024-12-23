@@ -36,3 +36,9 @@ end, {
 
 -- to sort diagnostics(virtual_text/floating) based on severity
 vim.diagnostic.config { severity_sort = true }
+
+-------------------------------------- neovide ------------------------------------------
+if vim.g.neovide then
+  opt.guifont = "JetBrainsMono Nerd Font:h12" -- text below applies for VimScript
+  vim.g.neovide_transparency = 0.7
+end
