@@ -10,6 +10,9 @@ g.vscode_snippets_path = vim.fn.stdpath "config" .. "/lua/snippets"
 opt.relativenumber = true
 opt.breakindent = true
 opt.linebreak = true
+opt.scrolloff = 5
+opt.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
+opt.laststatus = 3
 
 -------------------------------------- commands ------------------------------------------
 local autocmd = vim.api.nvim_create_user_command
