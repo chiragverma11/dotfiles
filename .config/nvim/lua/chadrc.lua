@@ -32,8 +32,18 @@ M.ui = {
     order = { "buffers", "tabs", "treeOffset" },
   },
 
+  telescope = {
+    style = "bordered",
+  },
+
   statusline = {
     theme = "minimal",
+    order = { "mode", "file", "git", "%=", "lsp_msg", "%=", "diagnostics", "lsp", "cwd", "cursor" },
+    modules = {
+      cursor = "%#St_Pos_sep#█%#St_Pos_bg# %#St_Pos_txt# %l/%c"
+        .. "%#St_pos_txt#%p%%"
+        .. "%#St_sep_r#█ %#ST_EmptySpace#",
+    },
   },
 }
 
