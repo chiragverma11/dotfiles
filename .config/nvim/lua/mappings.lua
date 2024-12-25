@@ -21,14 +21,14 @@ map("v", ">", ">gv", { desc = "general " .. "Indent", silent = true })
 
 -- Move
 map(
-  { "n", "x" },
+  { "n", "v" },
   "j",
   'v:count || mode(1)[0:1] == "no" ? "j" : "gj"',
   { desc = "Move down", noremap = true, expr = true }
 )
 
 map(
-  { "n", "x" },
+  { "n", "v" },
   "k",
   'v:count || mode(1)[0:1] == "no" ? "k" : "gk"',
   { desc = "Move up", noremap = true, expr = true }
