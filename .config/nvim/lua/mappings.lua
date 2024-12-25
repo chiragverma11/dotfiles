@@ -3,21 +3,21 @@ require "nvchad.mappings"
 local map = vim.keymap.set
 local del = vim.keymap.del
 
--- General
-map({ "n", "v" }, "<C-s>", ":w<CR>", { desc = "General " .. "Save File", silent = true })
+-- general
+map({ "n", "v" }, "<C-s>", ":w<CR>", { desc = "general " .. "Save File", silent = true })
 
-map("i", "<C-s>", "<Esc>:w<CR>a", { desc = "General " .. "Save File", silent = true })
+map("i", "<C-s>", "<Esc>:w<CR>a", { desc = "general " .. "Save File", silent = true })
 
 map("n", "<leader>fm", function()
   require("conform").format { async = true, lsp_format = "fallback" }
-end, { desc = "General " .. "Format with conform" })
+end, { desc = "general " .. "Format with conform" })
 
 map("n", "<leader>tt", function()
   require("base46").toggle_transparency()
-end, { desc = "General " .. "Toggle transparency" })
+end, { desc = "general " .. "Toggle transparency" })
 
-map("v", "<", "<gv", { desc = "General " .. "Dedent", silent = true })
-map("v", ">", ">gv", { desc = "General " .. "Indent", silent = true })
+map("v", "<", "<gv", { desc = "general " .. "Dedent", silent = true })
+map("v", ">", ">gv", { desc = "general " .. "Indent", silent = true })
 
 -- Move
 map(
@@ -57,11 +57,11 @@ map("i", "<A-j>", "<Esc>:m .+1<CR>==gi", { desc = "Move line down", silent = tru
 map("i", "<A-k>", "<Esc>:m .-2<CR>==gi", { desc = "Move line up", silent = true })
 
 -- Close
-map("n", "<leader>q", ":wq<CR>", { desc = "General " .. "Close" })
-map("n", "<leader>Q", ":qa!<CR>", { desc = "General " .. "Close" })
+map("n", "<leader>q", ":wq<CR>", { desc = "general " .. "Close" })
+map("n", "<leader>Q", ":qa!<CR>", { desc = "general " .. "Close" })
 
 -- Clear Search Highlights
-map("n", "<leader>nh", ":nohl<CR>", { desc = "General " .. "Clear search highlights", silent = true })
+map("n", "<leader>nh", ":nohl<CR>", { desc = "general " .. "Clear search highlights", silent = true })
 
 -- Tab Management
 map("n", "<leader>to", ":tabnew<CR>", { desc = "Tab " .. "New Tab" })
