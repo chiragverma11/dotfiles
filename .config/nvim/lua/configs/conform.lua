@@ -44,8 +44,9 @@ local options = {
     graphql = { "prettierd", "prettier", stop_after_first = true },
 
     sh = { "shfmt" },
-  },
 
+    rust = { "rustfmt" },
+  },
 
   format_on_save = function(bufnr)
     -- Disable with a global or buffer-local variable

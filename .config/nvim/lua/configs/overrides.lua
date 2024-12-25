@@ -23,6 +23,7 @@ M.treesitter = {
     "vimdoc",
     "bash",
     "regex",
+    "rust",
   },
   indent = {
     enable = true,
@@ -67,6 +68,9 @@ M.mason = {
 
     -- emmet stuff
     "emmet-language-server",
+
+    -- rust stuff
+    "rust-analyzer",
 
     -- markdown stuff
     "marksman",
