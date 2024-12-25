@@ -1,7 +1,8 @@
 ---@type NvPluginSpec[]
 return {
   {
-    "hrsh7th/nvim-cmp",
+    "yioneko/nvim-cmp",
+    branch = "perf",
 
     opts = {
       sources = {
@@ -9,10 +10,13 @@ return {
         { name = "luasnip", keyword_length = 2, max_item_count = 6 },
         { name = "buffer", keyword_length = 3, max_item_count = 6, group_index = 2 },
         { name = "path", keyword_length = 1 },
-        { name = "nvim_lua", keyword_length = 1 },
+        { name = "nvim_lua", keyword_length = 1, group_index = 2 },
       },
       completion = {
         keyword_length = 1,
+      },
+      mapping = {
+        ["<c-a>"] = require("cmp").mapping.abort(),
       },
     },
 
