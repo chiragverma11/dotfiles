@@ -7,6 +7,7 @@ return {
     keys = {
       { "]g", ":Gitsigns next_hunk<CR>", desc = "Gitsigns Next hunk" },
       { "[g", ":Gitsigns prev_hunk<CR>", desc = "Gitsigns Previous hunk" },
+      { "<leader>ph", ":Gitsigns preview_hunk<CR>", desc = "Gitsigns preview hunk" },
     },
     opts = overrides.gitsigns,
   },
