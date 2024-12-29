@@ -1,0 +1,105 @@
+{
+    "default_path": "/home/chirag/.local/bin",
+    "bins": {
+        "/home/chirag/.local/bin/ani-cli": {
+            "path": "/home/chirag/.local/bin/ani-cli",
+            "remote_name": "ani-cli",
+            "version": "v4.9",
+            "hash": "301c4d4913b108e11902009aec5047d174fd5b8ea88e6c5b95117ea23f070300",
+            "url": "github.com/pystardust/ani-cli",
+            "provider": "github",
+            "package_path": "",
+            "pinned": false
+        },
+        "/home/chirag/.local/bin/bin": {
+            "path": "/home/chirag/.local/bin/bin",
+            "remote_name": "bin_0.19.1_linux_amd64",
+            "version": "v0.19.1",
+            "hash": "1207be420c4fb9e24de5604314d6b4b89834a843aed0f6651ac4659820bc7f17",
+            "url": "https://github.com/marcosnils/bin/releases/tag/v0.19.1",
+            "provider": "",
+            "package_path": "",
+            "pinned": false
+        },
+        "/home/chirag/.local/bin/cloudflared": {
+            "path": "/home/chirag/.local/bin/cloudflared",
+            "remote_name": "cloudflared-linux-amd64",
+            "version": "2024.12.2",
+            "hash": "5237675a5e806120729acc78c5be02f9db5f406717699587abfa72b49b39fe40",
+            "url": "https://github.com/cloudflare/cloudflared/releases/tag/2024.12.2",
+            "provider": "",
+            "package_path": "",
+            "pinned": false
+        },
+        "/home/chirag/.local/bin/lazydocker": {
+            "path": "/home/chirag/.local/bin/lazydocker",
+            "remote_name": "lazydocker",
+            "version": "v0.24.1",
+            "hash": "20486dd92005e47f8709b8e5d7ab288e7e597303208189799f52351a554f4daa",
+            "url": "https://github.com/jesseduffield/lazydocker/releases/tag/v0.24.1",
+            "provider": "",
+            "package_path": "lazydocker",
+            "pinned": false
+        },
+        "/home/chirag/.local/bin/lazygit": {
+            "path": "/home/chirag/.local/bin/lazygit",
+            "remote_name": "lazygit",
+            "version": "v0.44.1",
+            "hash": "bd0459d3109304d5bbfa938dbe7f76e68f7c17df948a5d3ea7496c0dbf2748e9",
+            "url": "https://github.com/jesseduffield/lazygit/releases/tag/v0.44.1",
+            "provider": "",
+            "package_path": "lazygit",
+            "pinned": false
+        },
+        "/home/chirag/.local/bin/linux-smassh": {
+            "path": "/home/chirag/.local/bin/linux-smassh",
+            "remote_name": "linux-smassh",
+            "version": "v3.1.6",
+            "hash": "6b5ca506bb74ebc4a35bef7a32ac844317f6ac19a78ab777cd61748a9bc5b65c",
+            "url": "https://github.com/kraanzu/smassh/releases/tag/v3.1.6",
+            "provider": "",
+            "package_path": "",
+            "pinned": false
+        },
+        "/home/chirag/.local/bin/sesh": {
+            "path": "/home/chirag/.local/bin/sesh",
+            "remote_name": "sesh",
+            "version": "v2.7.0",
+            "hash": "6a5f728a1694bcd0515b918e3018ae2af2fa95bbb2d663b32fbef7c16f7397c7",
+            "url": "https://github.com/joshmedeski/sesh/releases/tag/v2.7.0",
+            "provider": "",
+            "package_path": "sesh",
+            "pinned": false
+        },
+        "/home/chirag/.local/bin/spotify_player": {
+            "path": "/home/chirag/.local/bin/spotify_player",
+            "remote_name": "spotify_player",
+            "version": "v0.20.4",
+            "hash": "a5ae3aa294b02a2a0b6c4a06fcd7d5a7e0dab4a0d0392b4b21646d57961b7b1a",
+            "url": "github.com/aome510/spotify-player",
+            "provider": "github",
+            "package_path": "spotify_player",
+            "pinned": false
+        },
+        "/home/chirag/.local/bin/ya": {
+            "path": "/home/chirag/.local/bin/ya",
+            "remote_name": "ya",
+            "version": "v0.4.2",
+            "hash": "e604b030afcb888e16dab44e22b68e73b87931fadb9b082a2db269a7914f5642",
+            "url": "https://github.com/sxyazi/yazi/releases/tag/v0.4.2",
+            "provider": "",
+            "package_path": "yazi-x86_64-unknown-linux-gnu/ya",
+            "pinned": false
+        },
+        "/home/chirag/.local/bin/yazi": {
+            "path": "/home/chirag/.local/bin/yazi",
+            "remote_name": "yazi",
+            "version": "v0.4.2",
+            "hash": "73a3f2f35d00e7600065b3f3763b9060f473ba57554acc887f8cc1106ace94d2",
+            "url": "https://github.com/sxyazi/yazi/releases/tag/v0.4.2",
+            "provider": "",
+            "package_path": "yazi-x86_64-unknown-linux-gnu/yazi",
+            "pinned": false
+        }
+    }
+}
