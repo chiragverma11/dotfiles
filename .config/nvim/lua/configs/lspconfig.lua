@@ -7,7 +7,17 @@ local servers = {
   html = {},
   cssls = {},
   ts_ls = {},
-  tailwindcss = {},
+  tailwindcss = {
+    settings = {
+      tailwindCSS = {
+        classFunctions = {
+          "tw",
+          "cva",
+          "clsx",
+        },
+      },
+    },
+  },
   eslint = { disabled = true }, -- using eslind_d instead of eslint
   prismals = {},
   marksman = {},
