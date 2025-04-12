@@ -9,6 +9,7 @@
 	email = chiragverma1013@gmail.com
 [core]
 	autocrlf = input
+  pager = delta
 [init]
 	defaultBranch = main
 [filter "lfs"]
@@ -16,3 +17,22 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+
+[interactive]
+    diffFilter = delta --color-only --features=interactive
+[delta]
+    navigate = true    
+    light = false      
+    side-by-side = true  
+    line-numbers = true   
+    features = decorations
+[delta "interactive"]
+    keep-plus-minus-markers = false
+[delta "decorations"]
+    commit-decoration-style = blue ol
+    commit-style = raw
+    file-style = omit
+    hunk-header-decoration-style = blue box
+    hunk-header-file-style = red
+    hunk-header-line-number-style = "#067a00"
+    hunk-header-style = file line-number syntax
