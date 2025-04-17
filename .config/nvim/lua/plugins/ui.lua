@@ -29,11 +29,6 @@ return {
   },
 
   {
-    "NvChad/nvim-colorizer.lua",
-    opts = overrides.nvim_colorizer,
-  },
-
-  {
     "hiphish/rainbow-delimiters.nvim",
     lazy = false,
     config = function()
