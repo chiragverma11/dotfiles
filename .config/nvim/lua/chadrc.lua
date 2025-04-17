@@ -57,4 +57,8 @@ M.nvdash = {
   load_on_startup = true,
 }
 
+M.colorify = {
+  enabled = false,
+}
+
 return M
