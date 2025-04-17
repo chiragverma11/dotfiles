@@ -80,7 +80,6 @@ M.mason = {
 
     -- markdown stuff
     "marksman",
-    "markdownlint-cli2",
     "markdown-toc",
 
     -- docker stuff

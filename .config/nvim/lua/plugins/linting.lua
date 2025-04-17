@@ -13,7 +13,6 @@ return {
       svelte = { "eslint_d" },
       vue = { "eslint_d" },
       astro = { "eslint_d" },
-      markdown = { "markdownlint-cli2" },
       dockerfile = { "hadolint" },
     }
 
