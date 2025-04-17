@@ -23,6 +23,7 @@ M.treesitter = {
     "vimdoc",
     "bash",
     "regex",
+    "java",
     "rust",
     "glsl",
   },
@@ -69,6 +70,10 @@ M.mason = {
 
     -- emmet stuff
     "emmet-language-server",
+
+    -- java stuff
+    "java-test",
+    "java-debug-adapter",
 
     -- rust stuff
     "rust-analyzer",
