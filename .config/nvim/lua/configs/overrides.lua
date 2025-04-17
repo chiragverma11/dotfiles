@@ -24,6 +24,7 @@ M.treesitter = {
     "bash",
     "regex",
     "rust",
+    "glsl",
   },
   indent = {
     enable = true,
@@ -81,6 +82,9 @@ M.mason = {
     "hadolint",
     "docker-compose-language-service",
     "dockerfile-language-server",
+
+    -- glsl/opengl
+    "glsl_analyzer",
   },
 }
 

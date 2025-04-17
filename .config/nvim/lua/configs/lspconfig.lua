@@ -74,6 +74,7 @@ local servers = {
       },
     },
   },
+  glsl_analyzer = {},
 }
 
 for server, config in pairs(servers) do
