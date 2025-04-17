@@ -15,9 +15,6 @@ return {
       completion = {
         keyword_length = 1,
       },
-      mapping = {
-        ["<c-a>"] = require("cmp").mapping.abort(),
-      },
     },
 
     dependencies = {
