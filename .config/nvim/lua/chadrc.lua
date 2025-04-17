@@ -5,7 +5,7 @@
 local M = {}
 
 M.base46 = {
-  theme = "tokyonight",
+  theme = "doomchad",
   transparency = true,
 
   hl_add = {
@@ -30,6 +30,12 @@ M.base46 = {
 M.ui = {
   tabufline = {
     order = { "buffers", "tabs", "treeOffset" },
+  },
+
+  cmp = {
+    format_colors = {
+      tailwind = true,
+    },
   },
 
   telescope = {
