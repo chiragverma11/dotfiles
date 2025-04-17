@@ -44,9 +44,9 @@
         "/home/chirag/.local/bin/lazygit": {
             "path": "/home/chirag/.local/bin/lazygit",
             "remote_name": "lazygit",
-            "version": "v0.48.0",
-            "hash": "952bcbe7e099826f61bcf57de0ad314f8bf4f24d2b0de2f70495a05cc6591781",
-            "url": "https://github.com/jesseduffield/lazygit/releases/tag/v0.48.0",
+            "version": "v0.49.0",
+            "hash": "53389a3f122d6fc04e62cb42a432f1b39f57a946e166bacb3bc05eb9e5be6ca7",
+            "url": "https://github.com/jesseduffield/lazygit/releases/tag/v0.49.0",
             "provider": "",
             "package_path": "lazygit",
             "pinned": false
