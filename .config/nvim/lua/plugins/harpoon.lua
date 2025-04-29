@@ -13,7 +13,7 @@ return {
   keys = function()
     local keys = {
       {
-        "<leader>H",
+        "<leader>ha",
         function()
           require("harpoon"):list():add()
         end,
@@ -45,7 +45,7 @@ return {
 
     for i = 1, 5 do
       table.insert(keys, {
-        "<leader>" .. i,
+        "<leader>h" .. i,
         function()
           require("harpoon"):list():select(i)
         end,

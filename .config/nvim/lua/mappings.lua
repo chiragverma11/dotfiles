@@ -8,6 +8,9 @@ map({ "n", "v" }, "<C-s>", ":w<CR>", { desc = "general " .. "Save File", silent 
 
 map("i", "<C-s>", "<Esc>:w<CR>a", { desc = "general " .. "Save File", silent = true })
 
+-- remove horizontal terminal keymap to avoid conflict with harpoon
+del("n", "<leader>h")
+
 map("n", "<leader>fm", function()
   require("conform").format { async = true, lsp_format = "fallback" }
 end, { desc = "general " .. "Format with conform" })
