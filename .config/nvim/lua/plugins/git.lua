@@ -38,5 +38,18 @@ return {
       "DiffviewFileHistory",
       "DiffviewLog",
     },
+    keys = {
+      { "<leader>gdv", "<cmd>DiffviewFileHistory %<cr>", desc = "View git history for current file" },
+      { "<leader>gdh", "<cmd>DiffviewFileHistory<cr>", desc = "View git history for repo" },
+      { "<leader>gdo", "<cmd>DiffviewOpen<cr>", desc = "View modified files" },
+      { "<leader>gdc", "<cmd>DiffviewClose<cr>", desc = "Close Diffview" },
+    },
+    opts = {
+      keymaps = {
+        view = { ["q"] = "<Cmd>DiffviewClose<CR>" },
+        file_panel = { ["q"] = "<Cmd>DiffviewClose<CR>" },
+        file_history_panel = { ["q"] = "<Cmd>DiffviewClose<CR>" },
+      },
+    },
   },
 }
