@@ -4,19 +4,19 @@
         "/home/chirag/.local/bin/ani-cli": {
             "path": "/home/chirag/.local/bin/ani-cli",
             "remote_name": "ani-cli",
-            "version": "v4.9",
-            "hash": "301c4d4913b108e11902009aec5047d174fd5b8ea88e6c5b95117ea23f070300",
-            "url": "github.com/pystardust/ani-cli",
-            "provider": "github",
+            "version": "v4.10",
+            "hash": "38599dc5bb65a5b9f78e936ed42ffe16b62095dbc6621a5b578ed3e29aac4f3e",
+            "url": "https://github.com/pystardust/ani-cli/releases/tag/v4.10",
+            "provider": "",
             "package_path": "",
             "pinned": false
         },
         "/home/chirag/.local/bin/bin": {
             "path": "/home/chirag/.local/bin/bin",
-            "remote_name": "bin_0.20.0_linux_amd64",
-            "version": "v0.20.0",
-            "hash": "cef1e7e7b97e2ef768cfe6dbebee18db27f27bb9ed668ca0876b4dffd3df5f52",
-            "url": "https://github.com/marcosnils/bin/releases/tag/v0.20.0",
+            "remote_name": "bin_0.21.0_linux_amd64",
+            "version": "v0.21.0",
+            "hash": "728dd14a8b3557f4eb02ca2a7914612024b6f7fc54a8fd55785978a3dbfc2706",
+            "url": "https://github.com/marcosnils/bin/releases/tag/v0.21.0",
             "provider": "",
             "package_path": "",
             "pinned": false
