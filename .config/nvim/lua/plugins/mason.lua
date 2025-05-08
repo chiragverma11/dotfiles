@@ -3,7 +3,7 @@ local overrides = require "configs.overrides"
 ---@type NvPluginSpec[]
 return {
   {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     opts = overrides.mason,
   },
 }

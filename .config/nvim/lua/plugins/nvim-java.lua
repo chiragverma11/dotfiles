@@ -13,7 +13,7 @@ return {
       "mfussenegger/nvim-dap",
       "neovim/nvim-lspconfig",
       {
-        "williamboman/mason.nvim",
+        "mason-org/mason.nvim",
         opts = {
           registries = {
             "github:nvim-java/mason-registry",
