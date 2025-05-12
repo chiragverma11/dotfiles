@@ -60,4 +60,50 @@ return {
       },
     },
   },
+
+  -- Blink integration
+  -- @see https://github.com/NvChad/NvChad/discussions/3244
+  { import = "nvchad.blink.lazyspec" },
+
+  {
+    "saghen/blink.cmp",
+    opts = {
+      enabled = function()
+        local disabled_filetypes = { "NvimTree", "NvimTree_1", "snacks_input", "snacks_picker_input" } -- Add extra fileypes you do not want blink enabled.
+        return not vim.tbl_contains(disabled_filetypes, vim.bo.filetype)
+      end,
+      completion = {
+        ghost_text = { enabled = false },
+        -- menu = {
+        --   auto_show = true,
+        -- },
+      },
+      cmdline = {
+        completion = {
+          menu = {
+            auto_show = true,
+          },
+          list = {
+            selection = {
+              preselect = true,
+              auto_insert = true,
+            },
+          },
+        },
+      },
+      sources = {
+        providers = {
+          cmdline = {
+            min_keyword_length = function(ctx)
+              -- when typing a command, only show when the keyword is 3 characters or longer
+              if ctx.mode == "cmdline" and string.find(ctx.line, " ") == nil then
+                return 3
+              end
+              return 0
+            end,
+          },
+        },
+      },
+    },
+  },
 }
