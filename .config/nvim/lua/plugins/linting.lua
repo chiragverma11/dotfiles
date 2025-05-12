@@ -19,18 +19,16 @@ return {
     -- add following eslint_d args to ignore following warning
     -- Could not parse linter output due to: Expected value but found invalid token at character 1
     -- output: Error: Could not find config file.
-    lint.linters = {
-      eslint_d = {
-        args = {
-          "--no-warn-ignored", -- <-- this is the key argument
-          "--format",
-          "json",
-          "--stdin",
-          "--stdin-filename",
-          function()
-            return vim.api.nvim_buf_get_name(0)
-          end,
-        },
+    lint.linters.eslint_d = {
+      args = {
+        "--no-warn-ignored", -- <-- this is the key argument
+        "--format",
+        "json",
+        "--stdin",
+        "--stdin-filename",
+        function()
+          return vim.api.nvim_buf_get_name(0)
+        end,
       },
     }
 
