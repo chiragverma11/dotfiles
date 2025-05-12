@@ -2,6 +2,7 @@
 return {
   {
     "OlegGulevskyy/better-ts-errors.nvim",
+    enabled = false,
     dependencies = { "MunifTanjim/nui.nvim" },
     ft = { "typescript", "typescriptreact", "typescript.tsx" },
     opts = {
