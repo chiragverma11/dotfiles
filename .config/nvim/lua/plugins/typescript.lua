@@ -8,4 +8,13 @@ return {
       require("ts-error-translator").setup()
     end,
   },
+
+  {
+    "dmmulroy/tsc.nvim",
+    event = "VeryLazy",
+    -- ft = { "typescript", "typescriptreact" },
+    config = function()
+      require("tsc").setup()
+    end,
+  },
 }
