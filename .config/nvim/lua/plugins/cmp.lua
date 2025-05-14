@@ -67,6 +67,7 @@ return {
 
   {
     "saghen/blink.cmp",
+    dependencies = { "alexandre-abrioux/blink-cmp-npm.nvim" },
     opts = {
       enabled = function()
         local disabled_filetypes = { "NvimTree", "NvimTree_1", "snacks_input", "snacks_picker_input" } -- Add extra fileypes you do not want blink enabled.
@@ -92,6 +93,7 @@ return {
         },
       },
       sources = {
+        default = { "lsp", "snippets", "buffer", "path", "npm" },
         providers = {
           cmdline = {
             min_keyword_length = function(ctx)
@@ -101,6 +103,12 @@ return {
               end
               return 0
             end,
+          },
+
+          npm = {
+            name = "npm",
+            module = "blink-cmp-npm",
+            async = true,
           },
         },
       },
