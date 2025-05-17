@@ -70,7 +70,7 @@ return {
     dependencies = { "alexandre-abrioux/blink-cmp-npm.nvim" },
     opts = {
       enabled = function()
-        local disabled_filetypes = { "NvimTree", "NvimTree_1", "snacks_input", "snacks_picker_input" } -- Add extra fileypes you do not want blink enabled.
+        local disabled_filetypes = { "NvimTree", "DressingInput", "snacks_input", "snacks_picker_input" } -- Add extra fileypes you do not want blink enabled.
         return not vim.tbl_contains(disabled_filetypes, vim.bo.filetype)
       end,
       completion = {
