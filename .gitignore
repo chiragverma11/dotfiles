@@ -1,5 +1,9 @@
 ### zsh
 /.config/zsh/.zcompdump-*
 
+# local zsh config
+/.config/zsh/.zshrc.local
+
+
 ### backups
 *.bak

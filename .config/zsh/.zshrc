@@ -76,3 +76,8 @@ export PATH="$JAVA_HOME/bin:$PATH"
 
 # Spicetify configuration
 export PATH=$PATH:/home/chirag/.spicetify
+
+# Load local configuration
+if [[ -r "$ZDOTDIR/.zshrc.local" ]]; then
+  source "$ZDOTDIR/.zshrc.local"
+fi
