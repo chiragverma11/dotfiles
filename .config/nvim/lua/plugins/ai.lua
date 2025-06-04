@@ -12,22 +12,28 @@ return {
     opts = {
       provider = "openai",
       auto_suggestions_provider = "openai",
-      openai = {
-        endpoint = "https://api.openai.com/v1",
-        model = "gpt-4o-mini",
-        timeout = 30000, -- Timeout in milliseconds
-        temperature = 0,
-        max_tokens = 4096,
+      providers = {
+        openai = {
+          endpoint = "https://api.openai.com/v1",
+          model = "gpt-4o-mini",
+          timeout = 30000, -- Timeout in milliseconds
+          extra_request_body = {
+            temperature = 0,
+            max_tokens = 4096,
+          },
+        },
       },
     },
     -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
     build = "make",
-    -- build = "powershell -ExecutionPolicy Bypass -File Build.ps1 -BuildFromSource false" -- for windows
     dependencies = {
+      "nvim-treesitter/nvim-treesitter",
       "stevearc/dressing.nvim",
       "nvim-lua/plenary.nvim",
       "MunifTanjim/nui.nvim",
       --- The below dependencies are optional,
+      -- "nvim-telescope/telescope.nvim", -- for file_selector provider telescope
+      -- "ibhagwan/fzf-lua", -- for file_selector provider fzf
       "nvim-tree/nvim-web-devicons", -- or echasnovski/mini.icons
       {
         -- support for image pasting
