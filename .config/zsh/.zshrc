@@ -71,8 +71,7 @@ case ":$PATH:" in
 esac
 
 # Java configuration
-export JAVA_HOME="$HOME/.jdks/openjdk-22.0.1"
-export PATH="$JAVA_HOME/bin:$PATH"
+export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:/bin/java::")
 
 # Spicetify configuration
 export PATH=$PATH:/home/chirag/.spicetify
