@@ -12,6 +12,8 @@ alias tn='tmux new-session'
 # Lists all ongoing sessions
 alias tl='tmux list-sessions'
 
+## Aliases for tmuxai
+alias tai="tmuxai"
 
 ## Aliases to fix blurry windows in wayland
 # example:

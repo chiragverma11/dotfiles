@@ -76,7 +76,11 @@ export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:/bin/java::")
 # Spicetify configuration
 export PATH=$PATH:/home/chirag/.spicetify
 
-# Load local configuration
+# TmuxAI configuration (https://tmuxai.dev/getting-started/#configuration)
+# NOTE: set TMUXAI_OPENROUTER_API_KEY in .zshrc.local
+export TMUXAI_OPENROUTER_MODEL="deepseek/deepseek-chat-v3-0324:free"
+
+# Load local configuration (keep this at the end)
 if [[ -r "$ZDOTDIR/.zshrc.local" ]]; then
   source "$ZDOTDIR/.zshrc.local"
 fi
