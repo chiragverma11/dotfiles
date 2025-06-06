@@ -1,7 +1,7 @@
 ---@type NvPluginSpec[]
 return {
   {
-    "Exafunction/codeium.vim",
+    "Exafunction/windsurf.vim",
     event = "BufEnter",
   },
   {
