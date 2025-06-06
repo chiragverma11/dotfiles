@@ -13,10 +13,10 @@
         },
         "/home/chirag/.local/bin/bin": {
             "path": "/home/chirag/.local/bin/bin",
-            "remote_name": "bin_0.21.1_linux_amd64",
-            "version": "v0.21.1",
-            "hash": "da1ab3b3b05258dbd1f61d948bcd4229464e2fbda3e8c7328b25c7184b98d692",
-            "url": "https://github.com/marcosnils/bin/releases/tag/v0.21.1",
+            "remote_name": "bin_0.21.2_linux_amd64",
+            "version": "v0.21.2",
+            "hash": "33cb0c85c0d9366460dd31967a6720a5416a4785efcd1b8232ef8b96b8f7a6f2",
+            "url": "https://github.com/marcosnils/bin/releases/tag/v0.21.2",
             "provider": "",
             "package_path": "",
             "pinned": false
@@ -24,9 +24,9 @@
         "/home/chirag/.local/bin/cloudflared": {
             "path": "/home/chirag/.local/bin/cloudflared",
             "remote_name": "cloudflared-linux-amd64",
-            "version": "2025.4.2",
-            "hash": "c4f2c09e38569f850da274d3b8502ea88304c1bd0a4f1528b420c23f715d4551",
-            "url": "https://github.com/cloudflare/cloudflared/releases/tag/2025.4.2",
+            "version": "2025.5.0",
+            "hash": "a62266fd02041374f1fca0d85694aafdf7e26e171a314467356b471d4ebb2393",
+            "url": "https://github.com/cloudflare/cloudflared/releases/tag/2025.5.0",
             "provider": "",
             "package_path": "",
             "pinned": false
@@ -44,9 +44,9 @@
         "/home/chirag/.local/bin/lazygit": {
             "path": "/home/chirag/.local/bin/lazygit",
             "remote_name": "lazygit",
-            "version": "v0.50.0",
-            "hash": "3487a1c0a0fb64fb53160e1c590de8068820215efaec08f7b2ca9928dde72815",
-            "url": "https://github.com/jesseduffield/lazygit/releases/tag/v0.50.0",
+            "version": "v0.51.1",
+            "hash": "18236e2b40d47e3b054ee503b9d9eeaa805b0e42918c768fb9542e4e695c8874",
+            "url": "https://github.com/jesseduffield/lazygit/releases/tag/v0.51.1",
             "provider": "",
             "package_path": "lazygit",
             "pinned": false
@@ -54,9 +54,9 @@
         "/home/chirag/.local/bin/linux-smassh": {
             "path": "/home/chirag/.local/bin/linux-smassh",
             "remote_name": "linux-smassh",
-            "version": "v3.1.6",
-            "hash": "6b5ca506bb74ebc4a35bef7a32ac844317f6ac19a78ab777cd61748a9bc5b65c",
-            "url": "https://github.com/kraanzu/smassh/releases/tag/v3.1.6",
+            "version": "v3.1.7",
+            "hash": "0deedbcb9d4baaaeb9e077308746991d7e548dba2ae9626db04073a25f6f3049",
+            "url": "https://github.com/kraanzu/smassh/releases/tag/v3.1.7",
             "provider": "",
             "package_path": "",
             "pinned": false
@@ -64,9 +64,9 @@
         "/home/chirag/.local/bin/sesh": {
             "path": "/home/chirag/.local/bin/sesh",
             "remote_name": "sesh",
-            "version": "v2.13.0",
-            "hash": "ca96c91f5b54a295c8bb4b4a6aca412826e0b5e8c2f2b96862240764ab10c71f",
-            "url": "https://github.com/joshmedeski/sesh/releases/tag/v2.13.0",
+            "version": "v2.15.0",
+            "hash": "f33ffb3570c5e8a28ac5963e01952065a39776a90b4f941fd647301f10d506ed",
+            "url": "https://github.com/joshmedeski/sesh/releases/tag/v2.15.0",
             "provider": "",
             "package_path": "sesh",
             "pinned": false
@@ -84,9 +84,9 @@
         "/home/chirag/.local/bin/ya": {
             "path": "/home/chirag/.local/bin/ya",
             "remote_name": "ya",
-            "version": "v25.4.8",
-            "hash": "571128a09f6f55d9db6825b43222892546a6c3185a309c2d0900ea80f78cf2b1",
-            "url": "https://github.com/sxyazi/yazi/releases/tag/v25.4.8",
+            "version": "v25.5.31",
+            "hash": "9ce1ca2ff7296c4c811d58fd7580210c4610c7c71189a2dbcbc6fbd0978fec7b",
+            "url": "https://github.com/sxyazi/yazi/releases/tag/v25.5.31",
             "provider": "",
             "package_path": "yazi-x86_64-unknown-linux-gnu/ya",
             "pinned": false
@@ -94,9 +94,9 @@
         "/home/chirag/.local/bin/yazi": {
             "path": "/home/chirag/.local/bin/yazi",
             "remote_name": "yazi",
-            "version": "v25.4.8",
-            "hash": "31acd4ae291cf4820ad894930353715fd12112887113a20d5f83b1258c931914",
-            "url": "https://github.com/sxyazi/yazi/releases/tag/v25.4.8",
+            "version": "v25.5.31",
+            "hash": "ddc761120ccc7e70dc074738d8a5bfc507dffde4cf3da8d2d914d81fcbeda481",
+            "url": "https://github.com/sxyazi/yazi/releases/tag/v25.5.31",
             "provider": "",
             "package_path": "yazi-x86_64-unknown-linux-gnu/yazi",
             "pinned": false
