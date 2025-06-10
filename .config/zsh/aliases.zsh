@@ -44,3 +44,5 @@ alias fpb="fzf --preview 'bat --color=always --style=numbers --line-range=:500 {
 ## General Aliases
 alias c="clear"
 alias open="xdg-open"
+
+alias vim="nvim"
