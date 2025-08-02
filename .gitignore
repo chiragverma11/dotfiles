@@ -4,6 +4,8 @@
 # local zsh config
 /.config/zsh/.zshrc.local
 
+# ignore .aider files in any folder
+**/.aider.*
 
 ### backups
 *.bak
