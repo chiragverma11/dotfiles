@@ -13,10 +13,10 @@
         },
         "/home/chirag/.local/bin/bin": {
             "path": "/home/chirag/.local/bin/bin",
-            "remote_name": "bin_0.21.2_linux_amd64",
-            "version": "v0.21.2",
-            "hash": "33cb0c85c0d9366460dd31967a6720a5416a4785efcd1b8232ef8b96b8f7a6f2",
-            "url": "https://github.com/marcosnils/bin/releases/tag/v0.21.2",
+            "remote_name": "bin_0.23.1_linux_amd64",
+            "version": "v0.23.1",
+            "hash": "3da665cb30e129d481ee79b87e01b7674cecdfb230171116ac9855694d094bec",
+            "url": "https://github.com/marcosnils/bin/releases/tag/v0.23.1",
             "provider": "",
             "package_path": "",
             "pinned": false
@@ -24,9 +24,9 @@
         "/home/chirag/.local/bin/cloudflared": {
             "path": "/home/chirag/.local/bin/cloudflared",
             "remote_name": "cloudflared-linux-amd64",
-            "version": "2025.5.0",
-            "hash": "a62266fd02041374f1fca0d85694aafdf7e26e171a314467356b471d4ebb2393",
-            "url": "https://github.com/cloudflare/cloudflared/releases/tag/2025.5.0",
+            "version": "2025.7.0",
+            "hash": "51e3909335fd7ba2ed5c696b0a6fb7d4a74f6a15bf36615cea0fccba620cfb3f",
+            "url": "https://github.com/cloudflare/cloudflared/releases/tag/2025.7.0",
             "provider": "",
             "package_path": "",
             "pinned": false
@@ -44,9 +44,9 @@
         "/home/chirag/.local/bin/lazygit": {
             "path": "/home/chirag/.local/bin/lazygit",
             "remote_name": "lazygit",
-            "version": "v0.51.1",
-            "hash": "18236e2b40d47e3b054ee503b9d9eeaa805b0e42918c768fb9542e4e695c8874",
-            "url": "https://github.com/jesseduffield/lazygit/releases/tag/v0.51.1",
+            "version": "v0.53.0",
+            "hash": "ab5ab7a72b2703aa564e49c2767cd888db73b22b4164e075fa03ee4a6dfe1e15",
+            "url": "https://github.com/jesseduffield/lazygit/releases/tag/v0.53.0",
             "provider": "",
             "package_path": "lazygit",
             "pinned": false
@@ -55,7 +55,7 @@
             "path": "/home/chirag/.local/bin/linux-smassh",
             "remote_name": "linux-smassh",
             "version": "v3.1.7",
-            "hash": "0deedbcb9d4baaaeb9e077308746991d7e548dba2ae9626db04073a25f6f3049",
+            "hash": "d8bd5f5467276612e2da3230b248bf82bb58272a8d2da6b4b359fc302f0a2cc2",
             "url": "https://github.com/kraanzu/smassh/releases/tag/v3.1.7",
             "provider": "",
             "package_path": "",
@@ -64,9 +64,9 @@
         "/home/chirag/.local/bin/sesh": {
             "path": "/home/chirag/.local/bin/sesh",
             "remote_name": "sesh",
-            "version": "v2.15.0",
-            "hash": "f33ffb3570c5e8a28ac5963e01952065a39776a90b4f941fd647301f10d506ed",
-            "url": "https://github.com/joshmedeski/sesh/releases/tag/v2.15.0",
+            "version": "v2.17.1",
+            "hash": "e4eddbc4b9eefaa5f4367e69bdcf797942781e3b8c5a076c6ece068ac2e806e8",
+            "url": "https://github.com/joshmedeski/sesh/releases/tag/v2.17.1",
             "provider": "",
             "package_path": "sesh",
             "pinned": false
@@ -74,9 +74,9 @@
         "/home/chirag/.local/bin/spotify_player": {
             "path": "/home/chirag/.local/bin/spotify_player",
             "remote_name": "spotify_player",
-            "version": "v0.20.5",
-            "hash": "b7712cc5e0fce9408ecfe4f61047aae0914bcc110e00e51529f34e493bd3d00b",
-            "url": "https://github.com/aome510/spotify-player/releases/tag/v0.20.5",
+            "version": "v0.20.7",
+            "hash": "7623a105257dc7b766fd67689b7240e10b891fe9ecc95c386b22d5b8d154f625",
+            "url": "https://github.com/aome510/spotify-player/releases/tag/v0.20.7",
             "provider": "",
             "package_path": "spotify_player",
             "pinned": false
