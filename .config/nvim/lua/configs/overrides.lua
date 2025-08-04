@@ -26,6 +26,8 @@ M.treesitter = {
     "java",
     "rust",
     "glsl",
+    "astro",
+    "svelte",
   },
   indent = {
     enable = true,
