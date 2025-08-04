@@ -38,6 +38,13 @@ local options = {
     sh = { "shfmt" },
 
     rust = { "rustfmt" },
+
+    python = { "black" },
+
+    sql = { "sql-formatter" },
+
+    astro = { "prettierd", "prettier", stop_after_first = true },
+    svelte = { "prettierd", "prettier", stop_after_first = true },
   },
 
   format_on_save = function(bufnr)
