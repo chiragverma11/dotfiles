@@ -34,9 +34,9 @@
         "/home/chirag/.local/bin/cloudflared": {
             "path": "/home/chirag/.local/bin/cloudflared",
             "remote_name": "cloudflared-linux-amd64",
-            "version": "2025.7.0",
-            "hash": "51e3909335fd7ba2ed5c696b0a6fb7d4a74f6a15bf36615cea0fccba620cfb3f",
-            "url": "https://github.com/cloudflare/cloudflared/releases/tag/2025.7.0",
+            "version": "2025.8.0",
+            "hash": "c7d3a69da0f7b9b1bc1ddcb0597d3552bcd7c15f8bbaba463dc489b94b7544ee",
+            "url": "https://github.com/cloudflare/cloudflared/releases/tag/2025.8.0",
             "provider": "",
             "package_path": "",
             "pinned": false
@@ -54,9 +54,9 @@
         "/home/chirag/.local/bin/lazygit": {
             "path": "/home/chirag/.local/bin/lazygit",
             "remote_name": "lazygit",
-            "version": "v0.53.0",
-            "hash": "ab5ab7a72b2703aa564e49c2767cd888db73b22b4164e075fa03ee4a6dfe1e15",
-            "url": "https://github.com/jesseduffield/lazygit/releases/tag/v0.53.0",
+            "version": "v0.54.1",
+            "hash": "7e142ada2d30d69d49ac65e3ccc1866348b50da5d267200b0fb472b93fe65789",
+            "url": "https://github.com/jesseduffield/lazygit/releases/tag/v0.54.1",
             "provider": "",
             "package_path": "lazygit",
             "pinned": false
