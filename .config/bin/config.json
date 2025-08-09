@@ -71,6 +71,16 @@
             "package_path": "",
             "pinned": false
         },
+        "/home/chirag/.local/bin/opencode": {
+            "path": "/home/chirag/.local/bin/opencode",
+            "remote_name": "opencode",
+            "version": "v0.4.2",
+            "hash": "8d73946fbfed5d64af2a7ae21e6f62dd9dfcec9db0539922d3e67abd1d5c6411",
+            "url": "https://github.com/sst/opencode/releases/tag/v0.4.2",
+            "provider": "",
+            "package_path": "opencode",
+            "pinned": false
+        },
         "/home/chirag/.local/bin/sesh": {
             "path": "/home/chirag/.local/bin/sesh",
             "remote_name": "sesh",
