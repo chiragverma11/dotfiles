@@ -11,7 +11,7 @@ export ZSH="$XDG_DATA_HOME/oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Oh-My-Zsh Plugins
-plugins=(git aliases zsh-autosuggestions fast-syntax-highlighting zsh-autocomplete fzf-tab zsh-vi-mode)
+plugins=(git aliases zsh-autosuggestions fast-syntax-highlighting zsh-autocomplete fzf-tab zsh-vi-mode autoupdate)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -62,6 +62,11 @@ source "$ZDOTDIR/functions.zsh"
 # Shell Integrations
 eval "$(zoxide init --cmd cd zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Auto-update Oh-My-Zsh Custom Plugins - https://github.com/tamcore/autoupdate-oh-my-zsh-plugins
+# Uncomment the following line to change how often to auto-update (in days).
+export UPDATE_ZSH_DAYS=7
+ZSH_CUSTOM_AUTOUPDATE_QUIET=true
 
 # PNPM configuration
 export PNPM_HOME="/home/chirag/.local/share/pnpm"
