@@ -1,0 +1,20 @@
+# OpenAI keys
+# Project: avante.nvim
+export OPENAI_API_KEY=
+# Project: Opencode
+# OPENAI_OPENCODE_API_KEY=
+
+# Avante OpenRouter API key
+export AVANTE_OPENROUTER_API_KEY=
+
+# TmuxAI OpenRouter API key
+export TMUXAI_OPENROUTER_API_KEY=
+
+export OPENROUTER_API_KEY=
+
+# Parse Bot API key, from https://parse.bot
+export PARSE_BOT_API_KEY=
+
+# Android
+export ANDROID_HOME=$HOME/Android/Sdk
+
