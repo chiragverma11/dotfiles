@@ -81,13 +81,12 @@ for server, config in pairs(servers) do
   local server_disabled = (config.disabled ~= nil and config.disabled) or false
 
   if not server_disabled then
-    lspconfig[server].setup(
-      vim.tbl_deep_extend("force", { on_attach = on_attach, capabilities = capabilities }, config)
-    )
+    vim.lsp.config(server, vim.tbl_deep_extend("force", { on_attach = on_attach, capabilities = capabilities }, config))
+    vim.lsp.enable(server)
   end
 end
 
-lspconfig.rust_analyzer.setup {
+vim.lsp.config("rust_analyzer", {
   on_attach = on_attach,
   capabilities = capabilities,
   filetypes = { "rust" },
@@ -99,4 +98,5 @@ lspconfig.rust_analyzer.setup {
       },
     },
   },
-}
+})
+vim.lsp.enable "rust_analyzer"
