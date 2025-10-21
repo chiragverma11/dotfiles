@@ -31,8 +31,8 @@ local options = {
     json = { "prettierd", "prettier", stop_after_first = true },
     jsonc = { "prettierd", "prettier", stop_after_first = true },
     yaml = { "prettierd", "prettier", stop_after_first = true },
-    ["markdown"] = { "prettierd", "markdownlint-cli2", "markdown-toc" },
-    ["markdown.mdx"] = { "prettierd", "markdownlint-cli2", "markdown-toc" },
+    markdown = { "prettierd", "markdown-toc" },
+    ["markdown.mdx"] = { "prettierd", "markdown-toc" },
     graphql = { "prettierd", "prettier", stop_after_first = true },
 
     sh = { "shfmt" },
