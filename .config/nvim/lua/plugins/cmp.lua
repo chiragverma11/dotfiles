@@ -6,8 +6,8 @@ return {
 
     opts = {
       sources = {
-        { name = "nvim_lsp" },
-        { name = "luasnip", keyword_length = 2, max_item_count = 6 },
+        { name = "nvim_lsp", priority = 1000 },
+        { name = "luasnip", keyword_length = 2, max_item_count = 6, priority = 10 },
         { name = "buffer", keyword_length = 3, max_item_count = 6, group_index = 2 },
         { name = "path", keyword_length = 1 },
         { name = "nvim_lua", keyword_length = 1, group_index = 2 },
