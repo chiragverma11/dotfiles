@@ -9,14 +9,9 @@ rev = "2e3b617"
 hash = "b67ee12053113983273e9118a7d1272b"
 
 [[plugin.deps]]
-use = "yazi-rs/plugins:hide-preview"
-rev = "b12a9ab"
-hash = "53f826884e2c7e521cecc492a7f31d7e"
-
-[[plugin.deps]]
-use = "yazi-rs/plugins:max-preview"
-rev = "b12a9ab"
-hash = "a8025f2bb311e869069364fba01abffc"
+use = "yazi-rs/plugins:toggle-pane"
+rev = "03cdd4b"
+hash = "8a7c58225816a163a6e8730c0adafbc8"
 
 [flavor]
 deps = []
