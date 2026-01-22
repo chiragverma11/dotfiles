@@ -9,6 +9,8 @@ export AVANTE_OPENROUTER_API_KEY=
 
 # TmuxAI OpenRouter API key
 export TMUXAI_OPENROUTER_API_KEY=
+# TmuxAI configuration (https://tmuxai.dev/getting-started/#configuration)
+export TMUXAI_OPENROUTER_MODEL=
 
 export OPENROUTER_API_KEY=
 
