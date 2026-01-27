@@ -1,11 +1,12 @@
-### zsh
-/.config/zsh/.zcompdump-*
+.aider.*
 
-# local zsh config
-/.config/zsh/.zshrc.local
-
-# ignore .aider files in any folder
-**/.aider.*
-
-### backups
+## zsh
+.zcompdump*
+.zsh_history
+.zsh_plugins.zsh
 *.bak
+*.local
+*.local.zsh
+*.zwc
+*.zwc.old
+~*

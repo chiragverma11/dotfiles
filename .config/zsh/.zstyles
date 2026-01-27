@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+#
+# .zstyles - zstyle settings for features/plugins that need them.
+#
+
+zstyle ':antidote:bundle' use-friendly-names 'yes'
+
+# fzf-tab configuration
+zstyle ':completion:*' menu no
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
+zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
+
+## ez-compinit
+# pick one of: gremlin, ohmy, prez, zshzoo
+zstyle ':plugin:ez-compinit' 'compstyle' 'gremlin'
+zstyle ':plugin:ez-compinit' 'use-cache' 'yes'

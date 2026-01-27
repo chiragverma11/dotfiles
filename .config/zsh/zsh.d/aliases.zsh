@@ -46,3 +46,5 @@ alias c="clear"
 alias open="xdg-open"
 
 alias vim="nvim"
+
+alias update="bash ~/.dotfiles/scripts/update.sh"
