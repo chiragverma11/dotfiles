@@ -4,9 +4,9 @@ local map = vim.keymap.set
 local del = vim.keymap.del
 
 -- general
-map({ "n", "v" }, "<C-s>", ":w<CR>", { desc = "general " .. "Save File", silent = true })
 
-map("i", "<C-s>", "<Esc>:w<CR>a", { desc = "general " .. "Save File", silent = true })
+-- map({ "n", "v" }, "<C-s>", ":w<CR>", { desc = "general " .. "Save File", silent = true })
+-- map("i", "<C-s>", "<Esc>:w<CR>a", { desc = "general " .. "Save File", silent = true })
 
 -- remove horizontal terminal keymap to avoid conflict with harpoon
 del("n", "<leader>h")
@@ -60,8 +60,8 @@ map("i", "<A-j>", "<Esc>:m .+1<CR>==gi", { desc = "Move line down", silent = tru
 map("i", "<A-k>", "<Esc>:m .-2<CR>==gi", { desc = "Move line up", silent = true })
 
 -- Close
-map("n", "<leader>q", ":wq<CR>", { desc = "general " .. "Close" })
-map("n", "<leader>Q", ":qa!<CR>", { desc = "general " .. "Close" })
+-- map("n", "<leader>q", ":wq<CR>", { desc = "general " .. "Close" })
+-- map("n", "<leader>Q", ":qa!<CR>", { desc = "general " .. "Close" })
 
 -- Clear Search Highlights
 map("n", "<leader>nh", ":nohl<CR>", { desc = "general " .. "Clear search highlights", silent = true })
