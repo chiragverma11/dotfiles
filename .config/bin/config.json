@@ -31,6 +31,16 @@
             "package_path": "",
             "pinned": false
         },
+        "/home/chirag/.local/bin/cloudflare-speed-cli": {
+            "path": "/home/chirag/.local/bin/cloudflare-speed-cli",
+            "remote_name": "cloudflare-speed-cli",
+            "version": "v0.6.2",
+            "hash": "8c123728154750442abbecc4950dfc727f2bbb9b223da8de8c288182c7200a2e",
+            "url": "https://github.com/kavehtehrani/cloudflare-speed-cli/releases/tag/v0.6.2",
+            "provider": "github",
+            "package_path": "cloudflare-speed-cli-x86_64-unknown-linux-musl/cloudflare-speed-cli",
+            "pinned": false
+        },
         "/home/chirag/.local/bin/cloudflared": {
             "path": "/home/chirag/.local/bin/cloudflared",
             "remote_name": "cloudflared-linux-amd64",
@@ -99,6 +109,16 @@
             "url": "https://github.com/aome510/spotify-player/releases/tag/v0.22.1",
             "provider": "github",
             "package_path": "spotify_player",
+            "pinned": false
+        },
+        "/home/chirag/.local/bin/surge": {
+            "path": "/home/chirag/.local/bin/surge",
+            "remote_name": "surge",
+            "version": "v0.6.4",
+            "hash": "a2251a5e591bd08bda9e7c1cc2ce717780cbffc4a9521e614bfb4a3276e68653",
+            "url": "https://github.com/surge-downloader/surge/releases/tag/v0.6.4",
+            "provider": "github",
+            "package_path": "surge",
             "pinned": false
         },
         "/home/chirag/.local/bin/ya": {
