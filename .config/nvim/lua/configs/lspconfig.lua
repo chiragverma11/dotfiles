@@ -25,9 +25,8 @@ local servers = {
   docker_compose_language_service = {},
   jsonls = {
     -- lazy-load schemastore when needed
-    on_new_config = function(new_config)
+    before_init = function(_, new_config)
       new_config.settings.json.schemas = new_config.settings.json.schemas or {}
-
       ---@diagnostic disable-next-line: undefined-field
       vim.list_extend(new_config.settings.json.schemas, require("schemastore").json.schemas())
     end,
@@ -51,7 +50,7 @@ local servers = {
       },
     },
     -- lazy-load schemastore when needed
-    on_new_config = function(new_config)
+    before_init = function(_, new_config)
       new_config.settings.yaml.schemas =
         ---@diagnostic disable-next-line: undefined-field
         vim.tbl_deep_extend("force", new_config.settings.yaml.schemas or {}, require("schemastore").yaml.schemas())
