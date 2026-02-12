@@ -14,10 +14,10 @@
         "/home/chirag/.local/bin/asciinema": {
             "path": "/home/chirag/.local/bin/asciinema",
             "remote_name": "asciinema-x86_64-unknown-linux-gnu",
-            "version": "v3.0.1",
-            "hash": "eb3a55e8778f6b86575ad58b47f1ee21d934e4baa8f01abaa5151cad490021f8",
-            "url": "https://github.com/asciinema/asciinema/releases/tag/v3.0.1",
-            "provider": "",
+            "version": "v3.1.0",
+            "hash": "3c298d3946e993946fc54bc4164d51b4fc91e12c57b33ca79087c53b30ef6291",
+            "url": "https://github.com/asciinema/asciinema/releases/tag/v3.1.0",
+            "provider": "github",
             "package_path": "",
             "pinned": false
         },
@@ -34,19 +34,19 @@
         "/home/chirag/.local/bin/cloudflared": {
             "path": "/home/chirag/.local/bin/cloudflared",
             "remote_name": "cloudflared-linux-amd64",
-            "version": "2025.11.1",
-            "hash": "991dffd8889ee9f0147b6b48933da9e4407e68ea8c6d984f55fa2d3db4bb431d",
-            "url": "https://github.com/cloudflare/cloudflared/releases/tag/2025.11.1",
-            "provider": "",
+            "version": "2026.2.0",
+            "hash": "176746db3be7dc7bd48f3dd287c8930a4645ebb6e6700f883fddda5a4c307c16",
+            "url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.2.0",
+            "provider": "github",
             "package_path": "",
             "pinned": false
         },
         "/home/chirag/.local/bin/lazydocker": {
             "path": "/home/chirag/.local/bin/lazydocker",
             "remote_name": "lazydocker",
-            "version": "v0.24.3",
-            "hash": "0b45fc33af172e6b9937949150c501d145db367cc17f3fcd4e274898e5feb280",
-            "url": "https://github.com/jesseduffield/lazydocker/releases/tag/v0.24.3",
+            "version": "v0.24.4",
+            "hash": "5385837e09ac48fa9ede95015bb1c8ae72d68d7c09e6e37837a1419fbfade0af",
+            "url": "https://github.com/jesseduffield/lazydocker/releases/tag/v0.24.4",
             "provider": "github",
             "package_path": "lazydocker",
             "pinned": false
@@ -54,9 +54,9 @@
         "/home/chirag/.local/bin/lazygit": {
             "path": "/home/chirag/.local/bin/lazygit",
             "remote_name": "lazygit",
-            "version": "v0.58.0",
-            "hash": "5c7c81884167cf38561c82704ec8783bcd199f484e6c63c781783f4f5a662a2a",
-            "url": "https://github.com/jesseduffield/lazygit/releases/tag/v0.58.0",
+            "version": "v0.59.0",
+            "hash": "9b31d9743260f23e44b298af21d552ece2edb39e0de56b84dd379da785a306ca",
+            "url": "https://github.com/jesseduffield/lazygit/releases/tag/v0.59.0",
             "provider": "github",
             "package_path": "lazygit",
             "pinned": false
@@ -74,19 +74,19 @@
         "/home/chirag/.local/bin/opencode": {
             "path": "/home/chirag/.local/bin/opencode",
             "remote_name": "opencode",
-            "version": "v0.15.10",
-            "hash": "564fce77668c25977d18364cc718dcb3c3ffa113a5ccbe0b8ea00ece1b6c0fdb",
-            "url": "https://github.com/sst/opencode/releases/tag/v0.15.10",
-            "provider": "",
+            "version": "v1.1.60",
+            "hash": "f656b5e383ded8c15ba3c4d4c1069368e01875a72dc79af239460b171e4ce923",
+            "url": "https://github.com/anomalyco/opencode/releases/tag/v1.1.60",
+            "provider": "github",
             "package_path": "opencode",
             "pinned": false
         },
         "/home/chirag/.local/bin/sesh": {
             "path": "/home/chirag/.local/bin/sesh",
             "remote_name": "sesh",
-            "version": "v2.20.0",
-            "hash": "26f8be2e1c5f305cd40f4995c38b4bb7d21ce63f5961e4298504fc7ed78ced29",
-            "url": "https://github.com/joshmedeski/sesh/releases/tag/v2.20.0",
+            "version": "v2.22.0",
+            "hash": "95cf10b8722f24589652ae679ba1c141d4a2e4ef6ad4ac8a33c53703b80c3fe1",
+            "url": "https://github.com/joshmedeski/sesh/releases/tag/v2.22.0",
             "provider": "github",
             "package_path": "sesh",
             "pinned": false
@@ -94,9 +94,9 @@
         "/home/chirag/.local/bin/spotify_player": {
             "path": "/home/chirag/.local/bin/spotify_player",
             "remote_name": "spotify_player",
-            "version": "v0.21.2",
-            "hash": "7043ee4932eec27482bf6218af77e4e3498359ae1063aabc3d90bc3500b8380e",
-            "url": "github.com/aome510/spotify-player",
+            "version": "v0.22.1",
+            "hash": "a3b162c19c4c32805032ce1a533482ba08cbf78f4e9d1bb11359fe4daee8354d",
+            "url": "https://github.com/aome510/spotify-player/releases/tag/v0.22.1",
             "provider": "github",
             "package_path": "spotify_player",
             "pinned": false
@@ -104,9 +104,9 @@
         "/home/chirag/.local/bin/ya": {
             "path": "/home/chirag/.local/bin/ya",
             "remote_name": "ya",
-            "version": "v26.1.4",
-            "hash": "6b66a4a7ea14d34189f8ff6a96b1bd574b81d74a447c795454df0e80bcba3f7b",
-            "url": "https://github.com/sxyazi/yazi/releases/tag/v26.1.4",
+            "version": "v26.1.22",
+            "hash": "91776df5cc3c03969a60ee4a678457eafad2ce490662b34a0d55fe36a8424c81",
+            "url": "https://github.com/sxyazi/yazi/releases/tag/v26.1.22",
             "provider": "github",
             "package_path": "yazi-x86_64-unknown-linux-gnu/ya",
             "pinned": false
@@ -114,9 +114,9 @@
         "/home/chirag/.local/bin/yazi": {
             "path": "/home/chirag/.local/bin/yazi",
             "remote_name": "yazi",
-            "version": "v26.1.4",
-            "hash": "a2533d1a77cd7352df1a91072a350fe7527cdc440a8d5eed916fecde509dd0c1",
-            "url": "https://github.com/sxyazi/yazi/releases/tag/v26.1.4",
+            "version": "v26.1.22",
+            "hash": "3bb9a09fb9e88947b21514b58960dcfb68ca879a486c6bccf92381765ed71489",
+            "url": "https://github.com/sxyazi/yazi/releases/tag/v26.1.22",
             "provider": "github",
             "package_path": "yazi-x86_64-unknown-linux-gnu/yazi",
             "pinned": false
