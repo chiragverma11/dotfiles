@@ -37,15 +37,6 @@ M.treesitter = {
     enable = true,
     use_languagetree = true,
   },
-  incremental_selection = {
-    enable = true,
-    keymaps = {
-      init_selection = "gnn",
-      node_incremental = "grn",
-      scope_incremental = false,
-      node_decremental = "grm",
-    },
-  },
 }
 
 M.mason = {
