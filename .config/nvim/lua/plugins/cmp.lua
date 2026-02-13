@@ -2,6 +2,7 @@
 return {
   {
     "yioneko/nvim-cmp",
+    enabled = false,
     branch = "perf",
 
     opts = {

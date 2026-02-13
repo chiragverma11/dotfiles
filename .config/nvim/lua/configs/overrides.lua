@@ -82,22 +82,7 @@ M.mason = {
 
     -- glsl/opengl
     "glsl_analyzer",
-  },
-}
 
--- git support in nvimtree
-M.nvimtree = {
-  git = {
-    enable = true,
-  },
-
-  renderer = {
-    highlight_git = true,
-    icons = {
-      show = {
-        git = true,
-      },
-    },
   },
 }
 
@@ -140,6 +125,9 @@ M.nvim_tree = {
     side = "right",
     number = true,
     relativenumber = true,
+  },
+  renderer = {
+    highlight_git = true,
   },
 }
 

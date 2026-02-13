@@ -6,7 +6,6 @@ return {
     dependencies = {
       {
         "JoosepAlviste/nvim-ts-context-commentstring",
-        dependencies = { "numToStr/Comment.nvim" },
         opts = {
           enable_autocmd = false,
         },

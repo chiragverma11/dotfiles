@@ -17,7 +17,7 @@ return {
       { "}", "<cmd>AerialNext<CR>", desc = "Aerial Next", mode = { "n" } },
     },
     config = function(_, opts)
-      require("aerial").setup { opts }
+      require("aerial").setup(opts)
     end,
   },
 }
