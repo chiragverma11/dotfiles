@@ -19,7 +19,12 @@ return {
     -- add following eslint_d args to ignore following warning
     -- Could not parse linter output due to: Expected value but found invalid token at character 1
     -- output: Error: Could not find config file.
-    lint.linters.eslint_d = {
+
+    -- preserve existing default linter and extend it
+    local default_eslintd = lint.linters.eslint_d or {}
+    lint.linters.eslint_d = vim.tbl_extend("force", default_eslintd, {
+      cmd = default_eslintd.cmd or "eslint_d",
+      stdin = default_eslintd.stdin ~= nil and default_eslintd.stdin or true,
       args = {
         "--no-warn-ignored", -- <-- this is the key argument
         "--format",
@@ -30,7 +35,7 @@ return {
           return vim.api.nvim_buf_get_name(0)
         end,
       },
-    }
+    })
 
     local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
 
