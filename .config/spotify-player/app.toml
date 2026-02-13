@@ -1,5 +1,5 @@
 # documentation https://github.com/aome510/spotify-player/blob/master/docs/config.md
-theme = "default"
+theme = "default2"
 client_id = "41f16ed9641447e68216f9bbb74c0b72"
 client_port = 8080
 login_redirect_uri = "http://127.0.0.1:8989/login"
