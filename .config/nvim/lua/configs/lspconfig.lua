@@ -3,6 +3,12 @@ local capabilities = require("nvchad.configs.lspconfig").capabilities
 
 local lspconfig = require "lspconfig"
 
+---@alias RustDiagnosticSource "rust-analyzer" | "bacon-ls"
+---@type RustDiagnosticSource
+vim.g.rust_diagnostics = "bacon-ls"
+
+local diagnostics = vim.g.rust_diagnostics
+
 local servers = {
   html = {},
   cssls = {},
@@ -74,6 +80,7 @@ local servers = {
     },
   },
   glsl_analyzer = {},
+  bacon_ls = { disabled = diagnostics == "rust-analyzer" },
 }
 
 for server, config in pairs(servers) do
@@ -84,18 +91,3 @@ for server, config in pairs(servers) do
     vim.lsp.enable(server)
   end
 end
-
-vim.lsp.config("rust_analyzer", {
-  on_attach = on_attach,
-  capabilities = capabilities,
-  filetypes = { "rust" },
-  root_dir = lspconfig.util.root_pattern "Cargo.toml",
-  settings = {
-    ["rust-analyzer"] = {
-      cargo = {
-        allFeatures = true,
-      },
-    },
-  },
-})
-vim.lsp.enable "rust_analyzer"

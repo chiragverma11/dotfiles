@@ -25,6 +25,7 @@ M.treesitter = {
     "regex",
     "java",
     "rust",
+    "ron",
     "glsl",
     "astro",
     "svelte",
@@ -70,6 +71,9 @@ M.mason = {
 
     -- rust stuff
     "rust-analyzer",
+    "bacon",
+    "bacon-ls",
+    "codelldb",
 
     -- markdown stuff
     "marksman",
