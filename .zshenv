@@ -19,3 +19,5 @@ typeset -gU path fpath
 
 # Prepend user-local bins
 path=($HOME/bin $HOME/.local/bin $path)
+
+[[ -r "$HOME/.cargo/env" ]] && . "$HOME/.cargo/env"
