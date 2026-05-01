@@ -31,6 +31,16 @@
             "package_path": "",
             "pinned": false
         },
+        "/home/chirag/.local/bin/bob": {
+            "path": "/home/chirag/.local/bin/bob",
+            "remote_name": "bob",
+            "version": "v4.1.7",
+            "hash": "3f2f13a123d138feb7d65636900450b9d87e5a680bee8abfd02dc9919823b9df",
+            "url": "https://github.com/MordechaiHadad/bob/releases/tag/v4.1.7",
+            "provider": "github",
+            "package_path": "bob-linux-x86_64/bob",
+            "pinned": false
+        },
         "/home/chirag/.local/bin/cloudflare-speed-cli": {
             "path": "/home/chirag/.local/bin/cloudflare-speed-cli",
             "remote_name": "cloudflare-speed-cli",

@@ -21,3 +21,6 @@ typeset -gU path fpath
 path=($HOME/bin $HOME/.local/bin $path)
 
 [[ -r "$HOME/.cargo/env" ]] && . "$HOME/.cargo/env"
+
+# Bob
+[[ -r "$XDG_DATA_HOME/bob/env/env.sh" ]] && . "$XDG_DATA_HOME/bob/env/env.sh"
