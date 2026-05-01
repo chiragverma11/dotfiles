@@ -4,30 +4,30 @@
         "/home/chirag/.local/bin/ani-cli": {
             "path": "/home/chirag/.local/bin/ani-cli",
             "remote_name": "ani-cli",
-            "version": "v4.10",
-            "hash": "38599dc5bb65a5b9f78e936ed42ffe16b62095dbc6621a5b578ed3e29aac4f3e",
-            "url": "https://github.com/pystardust/ani-cli/releases/tag/v4.10",
-            "provider": "",
+            "version": "v4.13",
+            "hash": "17c8a97b034d3e48ba4663d538a5705adfbbffb951fa67650a57f7e4414959e2",
+            "url": "https://github.com/pystardust/ani-cli/releases/tag/v4.13",
+            "provider": "github",
             "package_path": "",
             "pinned": false
         },
         "/home/chirag/.local/bin/asciinema": {
             "path": "/home/chirag/.local/bin/asciinema",
             "remote_name": "asciinema-x86_64-unknown-linux-gnu",
-            "version": "v3.1.0",
-            "hash": "3c298d3946e993946fc54bc4164d51b4fc91e12c57b33ca79087c53b30ef6291",
-            "url": "https://github.com/asciinema/asciinema/releases/tag/v3.1.0",
+            "version": "v3.2.0",
+            "hash": "89f431ea3a31f9a108f38050a242aa63f8d368975330212281675c4fb1399633",
+            "url": "https://github.com/asciinema/asciinema/releases/tag/v3.2.0",
             "provider": "github",
             "package_path": "",
             "pinned": false
         },
         "/home/chirag/.local/bin/bin": {
             "path": "/home/chirag/.local/bin/bin",
-            "remote_name": "bin_0.24.2_linux_amd64",
-            "version": "v0.24.2",
-            "hash": "55471bae467cdd775a0ea73b71d37061fdf24185b15dadeb68a61638c43101b5",
-            "url": "https://github.com/marcosnils/bin/releases/tag/v0.24.2",
-            "provider": "",
+            "remote_name": "bin_0.25.5_linux_amd64",
+            "version": "v0.25.5",
+            "hash": "e47065566205f4e833296a2dc23367da1622230faa021d9c0cab3b669c4282f9",
+            "url": "https://github.com/marcosnils/bin/releases/tag/v0.25.5",
+            "provider": "github",
             "package_path": "",
             "pinned": false
         },
@@ -44,9 +44,9 @@
         "/home/chirag/.local/bin/cloudflare-speed-cli": {
             "path": "/home/chirag/.local/bin/cloudflare-speed-cli",
             "remote_name": "cloudflare-speed-cli",
-            "version": "v0.6.2",
-            "hash": "8c123728154750442abbecc4950dfc727f2bbb9b223da8de8c288182c7200a2e",
-            "url": "https://github.com/kavehtehrani/cloudflare-speed-cli/releases/tag/v0.6.2",
+            "version": "v0.6.6",
+            "hash": "a87daaf8ec06067df8414533cab0ce66edd4a55e79e43c17a46680c962fb57e2",
+            "url": "https://github.com/kavehtehrani/cloudflare-speed-cli/releases/tag/v0.6.6",
             "provider": "github",
             "package_path": "cloudflare-speed-cli-x86_64-unknown-linux-musl/cloudflare-speed-cli",
             "pinned": false
@@ -54,9 +54,9 @@
         "/home/chirag/.local/bin/cloudflared": {
             "path": "/home/chirag/.local/bin/cloudflared",
             "remote_name": "cloudflared-linux-amd64",
-            "version": "2026.2.0",
-            "hash": "176746db3be7dc7bd48f3dd287c8930a4645ebb6e6700f883fddda5a4c307c16",
-            "url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.2.0",
+            "version": "2026.3.0",
+            "hash": "4a9e50e6d6d798e90fcd01933151a90bf7edd99a0a55c28ad18f2e16263a5c30",
+            "url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.3.0",
             "provider": "github",
             "package_path": "",
             "pinned": false
@@ -64,9 +64,9 @@
         "/home/chirag/.local/bin/lazydocker": {
             "path": "/home/chirag/.local/bin/lazydocker",
             "remote_name": "lazydocker",
-            "version": "v0.24.4",
-            "hash": "5385837e09ac48fa9ede95015bb1c8ae72d68d7c09e6e37837a1419fbfade0af",
-            "url": "https://github.com/jesseduffield/lazydocker/releases/tag/v0.24.4",
+            "version": "v0.25.2",
+            "hash": "fa14fba9f56266e6b1e6374b6ee477fcd5d7858915eb603e8e77ac577ce14a2c",
+            "url": "https://github.com/jesseduffield/lazydocker/releases/tag/v0.25.2",
             "provider": "github",
             "package_path": "lazydocker",
             "pinned": false
@@ -74,9 +74,9 @@
         "/home/chirag/.local/bin/lazygit": {
             "path": "/home/chirag/.local/bin/lazygit",
             "remote_name": "lazygit",
-            "version": "v0.59.0",
-            "hash": "9b31d9743260f23e44b298af21d552ece2edb39e0de56b84dd379da785a306ca",
-            "url": "https://github.com/jesseduffield/lazygit/releases/tag/v0.59.0",
+            "version": "v0.61.1",
+            "hash": "b3ebc9b6168055cf56c0665f882ab87f3c340e5de21ae5c69233cd9e9f72cda8",
+            "url": "https://github.com/jesseduffield/lazygit/releases/tag/v0.61.1",
             "provider": "github",
             "package_path": "lazygit",
             "pinned": false
@@ -93,20 +93,20 @@
         },
         "/home/chirag/.local/bin/opencode": {
             "path": "/home/chirag/.local/bin/opencode",
-            "remote_name": "opencode",
-            "version": "v1.1.60",
-            "hash": "f656b5e383ded8c15ba3c4d4c1069368e01875a72dc79af239460b171e4ce923",
-            "url": "https://github.com/anomalyco/opencode/releases/tag/v1.1.60",
+            "remote_name": "opencode-electron-linux-x86_64.AppImage",
+            "version": "v1.14.31",
+            "hash": "a7fe5baa1ac0470b803e052fcada4a2231191e31575e4cf998b973a9541cc71d",
+            "url": "https://github.com/anomalyco/opencode/releases/tag/v1.14.31",
             "provider": "github",
-            "package_path": "opencode",
+            "package_path": "",
             "pinned": false
         },
         "/home/chirag/.local/bin/sesh": {
             "path": "/home/chirag/.local/bin/sesh",
             "remote_name": "sesh",
-            "version": "v2.22.0",
-            "hash": "95cf10b8722f24589652ae679ba1c141d4a2e4ef6ad4ac8a33c53703b80c3fe1",
-            "url": "https://github.com/joshmedeski/sesh/releases/tag/v2.22.0",
+            "version": "v2.26.1",
+            "hash": "578f35cc8ca25f3ba7a9faac1d3a11f90ea4f536a5ca92310749dfcd5d1d64db",
+            "url": "https://github.com/joshmedeski/sesh/releases/tag/v2.26.1",
             "provider": "github",
             "package_path": "sesh",
             "pinned": false
@@ -114,9 +114,9 @@
         "/home/chirag/.local/bin/spotify_player": {
             "path": "/home/chirag/.local/bin/spotify_player",
             "remote_name": "spotify_player",
-            "version": "v0.22.1",
-            "hash": "a3b162c19c4c32805032ce1a533482ba08cbf78f4e9d1bb11359fe4daee8354d",
-            "url": "https://github.com/aome510/spotify-player/releases/tag/v0.22.1",
+            "version": "v0.23.0",
+            "hash": "fccf391697233aca229075597bab66b386778bd9b77d023d96951a1316b384fc",
+            "url": "https://github.com/aome510/spotify-player/releases/tag/v0.23.0",
             "provider": "github",
             "package_path": "spotify_player",
             "pinned": false
@@ -124,9 +124,9 @@
         "/home/chirag/.local/bin/surge": {
             "path": "/home/chirag/.local/bin/surge",
             "remote_name": "surge",
-            "version": "v0.6.4",
-            "hash": "a2251a5e591bd08bda9e7c1cc2ce717780cbffc4a9521e614bfb4a3276e68653",
-            "url": "https://github.com/surge-downloader/surge/releases/tag/v0.6.4",
+            "version": "v0.8.4",
+            "hash": "7d625b8d5a64a1336ea8ff5fc3d168670fa2b2d32e0721edcd806d7c86b08145",
+            "url": "https://github.com/SurgeDM/Surge/releases/tag/v0.8.4",
             "provider": "github",
             "package_path": "surge",
             "pinned": false
