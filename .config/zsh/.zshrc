@@ -53,7 +53,6 @@ eval "$(zoxide init --cmd cd zsh)"
 if (( $+commands[fzf] )); then
     source <(fzf --zsh)
 fi
-eval $(thefuck --alias)
 
 # PNPM configuration
 export PNPM_HOME="/home/chirag/.local/share/pnpm"
@@ -76,3 +75,6 @@ fi
 # Finish profiling by calling zprof.
 [[ "$ZPROFRC" -eq 1 ]] && zprof
 [[ -v ZPROFRC ]] && unset ZPROFRC
+
+# opencode
+export PATH=/home/chirag/.opencode/bin:$PATH
