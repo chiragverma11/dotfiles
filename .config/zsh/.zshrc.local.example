@@ -20,3 +20,5 @@ export PARSE_BOT_API_KEY=
 # Android
 export ANDROID_HOME=$HOME/Android/Sdk
 
+# GitHub PAT
+export GITHUB_AUTH_TOKEN=
