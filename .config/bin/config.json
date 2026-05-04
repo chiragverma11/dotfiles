@@ -94,9 +94,9 @@
         "/home/chirag/.local/bin/opencode": {
             "path": "/home/chirag/.local/bin/opencode",
             "remote_name": "opencode-electron-linux-x86_64.AppImage",
-            "version": "v1.14.31",
-            "hash": "a7fe5baa1ac0470b803e052fcada4a2231191e31575e4cf998b973a9541cc71d",
-            "url": "https://github.com/anomalyco/opencode/releases/tag/v1.14.31",
+            "version": "v1.14.33",
+            "hash": "251e33cc3efd116a37902112ac2530a63b539a1cd6b7119913c06ec1d23cab61",
+            "url": "https://github.com/anomalyco/opencode/releases/tag/v1.14.33",
             "provider": "github",
             "package_path": "",
             "pinned": false
@@ -124,9 +124,9 @@
         "/home/chirag/.local/bin/surge": {
             "path": "/home/chirag/.local/bin/surge",
             "remote_name": "surge",
-            "version": "v0.8.4",
-            "hash": "7d625b8d5a64a1336ea8ff5fc3d168670fa2b2d32e0721edcd806d7c86b08145",
-            "url": "https://github.com/SurgeDM/Surge/releases/tag/v0.8.4",
+            "version": "v0.8.5",
+            "hash": "243ae2d6660d923116f4a2b6bdeac09460d05d1ba22ffc02e21df200ad713926",
+            "url": "https://github.com/SurgeDM/Surge/releases/tag/v0.8.5",
             "provider": "github",
             "package_path": "surge",
             "pinned": false
