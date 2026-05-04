@@ -56,6 +56,9 @@ if (( $+commands[fzf] )); then
     source <(fzf --zsh)
 fi
 
+# SSH configuration
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+
 # PNPM configuration
 export PNPM_HOME="/home/chirag/.local/share/pnpm"
 case ":$PATH:" in
@@ -74,9 +77,9 @@ if [[ -r "$ZDOTDIR/.zshrc.local" ]]; then
   source "$ZDOTDIR/.zshrc.local"
 fi
 
+# opencode
+export PATH=/home/chirag/.opencode/bin:$PATH
+
 # Finish profiling by calling zprof.
 [[ "$ZPROFRC" -eq 1 ]] && zprof
 [[ -v ZPROFRC ]] && unset ZPROFRC
-
-# opencode
-export PATH=/home/chirag/.opencode/bin:$PATH
