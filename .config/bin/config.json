@@ -130,26 +130,6 @@
             "provider": "github",
             "package_path": "surge",
             "pinned": false
-        },
-        "/home/chirag/.local/bin/ya": {
-            "path": "/home/chirag/.local/bin/ya",
-            "remote_name": "ya",
-            "version": "v26.1.22",
-            "hash": "91776df5cc3c03969a60ee4a678457eafad2ce490662b34a0d55fe36a8424c81",
-            "url": "https://github.com/sxyazi/yazi/releases/tag/v26.1.22",
-            "provider": "github",
-            "package_path": "yazi-x86_64-unknown-linux-gnu/ya",
-            "pinned": false
-        },
-        "/home/chirag/.local/bin/yazi": {
-            "path": "/home/chirag/.local/bin/yazi",
-            "remote_name": "yazi",
-            "version": "v26.1.22",
-            "hash": "3bb9a09fb9e88947b21514b58960dcfb68ca879a486c6bccf92381765ed71489",
-            "url": "https://github.com/sxyazi/yazi/releases/tag/v26.1.22",
-            "provider": "github",
-            "package_path": "yazi-x86_64-unknown-linux-gnu/yazi",
-            "pinned": false
         }
     }
 }
