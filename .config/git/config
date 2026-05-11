@@ -4,9 +4,16 @@
 	credentialStore = gpg
 [credential "https://dev.azure.com"]
 	useHttpPath = true
+[commit]
+  gpgsign = true
+[gpg]
+	format = ssh
+[gpg "ssh"]
+    allowedSignersFile = ~/.config/git/allowed_signers
 [user]
 	name = Chirag Verma
 	email = chiragverma1013@gmail.com
+  signingkey = ~/.ssh/id_ed25519_github_personal.pub
 [core]
 	autocrlf = input
   pager = delta
