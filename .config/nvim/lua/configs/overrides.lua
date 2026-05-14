@@ -99,6 +99,7 @@ M.nvim_colorizer = {
     "!cmp_menu",
   },
   user_default_options = {
+    css_fn = true,
     tailwind = true,
   },
 }
