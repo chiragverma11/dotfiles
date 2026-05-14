@@ -48,3 +48,5 @@ alias open="xdg-open"
 alias vim="nvim"
 
 alias update="bash ~/.dotfiles/scripts/update.sh"
+
+alias history-edit="nvim $HISTFILE"
