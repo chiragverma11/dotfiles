@@ -44,6 +44,9 @@ on = [ "9" ]
 run = "plugin relative-motions 9"
 desc = "Move in relative steps"
 
+
+# toggle-pane plugin
+
 # Hide/Show preview
 [[mgr.prepend_keymap]]
 on   = "T"
@@ -55,3 +58,9 @@ desc = "Show or hide the preview pane"
 on   = "M"
 run  = "plugin toggle-pane max-preview"
 desc = "Maximize or restore the preview pane"
+
+
+# mount plugin
+[[mgr.prepend_keymap]]
+on  = "<C-m>"
+run = "plugin mount"

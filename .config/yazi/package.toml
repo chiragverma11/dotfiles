@@ -9,6 +9,11 @@ rev = "5d5c480"
 hash = "9c7987da2d2a2120dac33abb64132004"
 
 [[plugin.deps]]
+use = "yazi-rs/plugins:mount"
+rev = "5d5c480"
+hash = "e3260d0b1feded8c8e3ae3afa1169e30"
+
+[[plugin.deps]]
 use = "Jormala/relative-motions"
 rev = "d4f2003"
 hash = "e0017cae4c0772dd41b7e7c259a6e683"
