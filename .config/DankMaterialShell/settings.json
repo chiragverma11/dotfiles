@@ -210,7 +210,7 @@
   "dankLauncherV2UnloadOnClose": false,
   "useAutoLocation": false,
   "weatherEnabled": true,
-  "networkPreference": "auto",
+  "networkPreference": "wifi",
   "iconTheme": "WhiteSur",
   "cursorSettings": {
     "theme": "System Default",
@@ -261,7 +261,7 @@
   "batterySuspendBehavior": 0,
   "batteryProfileName": "",
   "batteryChargeLimit": 100,
-  "lockBeforeSuspend": false,
+  "lockBeforeSuspend": true,
   "loginctlLockIntegration": true,
   "fadeToLockEnabled": true,
   "fadeToLockGracePeriod": 5,
@@ -271,7 +271,9 @@
   "brightnessDevicePins": {},
   "wifiNetworkPins": {
     "preferredWifi": [
-      "TP-Link_E40C_5G"
+      "TP-Link_E40C_5G",
+      "TP-Link_E40C",
+      "HGW-A7C953"
     ]
   },
   "bluetoothDevicePins": {
