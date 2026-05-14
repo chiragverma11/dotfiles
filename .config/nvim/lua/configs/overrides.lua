@@ -87,6 +87,9 @@ M.mason = {
     -- glsl/opengl
     "glsl_analyzer",
 
+    -- python stuff
+    "black",
+    "sql-formatter",
   },
 }
 
