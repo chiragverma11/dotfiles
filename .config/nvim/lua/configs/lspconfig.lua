@@ -80,6 +80,7 @@ local servers = {
     },
   },
   glsl_analyzer = {},
+  emmet_language_server = {},
   bacon_ls = { disabled = diagnostics == "rust-analyzer" },
 }
 
