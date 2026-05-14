@@ -1,8 +1,9 @@
 ---@type NvPluginSpec[]
 return {
   {
-    -- NOTE: This plugin is currently disabled as I am using blink.cmp, keeping it here until nvchad fully replaces nvim-cmp with blink.cmp
     "yioneko/nvim-cmp",
+    -- NOTE: This plugin is currently disabled as I am using blink.cmp, keeping it here until nvchad fully replaces nvim-cmp with blink.cmp
+    -- look at ↓↓↓↓ for blink.cmp
     enabled = false,
     branch = "perf",
 
