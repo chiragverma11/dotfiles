@@ -158,3 +158,12 @@ end, { desc = "NvimNotify " .. "Dismiss all notifications" })
 map("i", "<C-d>", function()
   require("notify").dismiss()
 end, { desc = "NvimNotify " .. "Dismiss all notifications" })
+
+-- Telescope
+map("n", "<leader>fW", function()
+  require("telescope.builtin").live_grep {
+    additional_args = function()
+      return { "--hidden", "--no-ignore" }
+    end,
+  }
+end, { desc = "telescope " .. "live grep all files" })
