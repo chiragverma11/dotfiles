@@ -5,5 +5,11 @@
   },
   "dmsDesktopCountdown": {
     "enabled": true
+  },
+  "calculator": {
+    "enabled": true,
+    "trigger": "=",
+    "persistHistoryOnFile": false,
+    "calcEngine": "qalc"
   }
 }
