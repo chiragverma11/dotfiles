@@ -80,6 +80,9 @@ fi
 # opencode
 export PATH=/home/chirag/.opencode/bin:$PATH
 
+# Mise
+eval "$(mise activate zsh)"
+
 # Finish profiling by calling zprof.
 [[ "$ZPROFRC" -eq 1 ]] && zprof
 [[ -v ZPROFRC ]] && unset ZPROFRC
