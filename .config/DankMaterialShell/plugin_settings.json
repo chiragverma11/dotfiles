@@ -11,5 +11,8 @@
     "trigger": "=",
     "persistHistoryOnFile": false,
     "calcEngine": "qalc"
+  },
+  "appShortcut": {
+    "enabled": true
   }
 }

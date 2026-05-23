@@ -412,9 +412,7 @@
   "screenPreferences": {},
   "showOnLastDisplay": {},
   "niriOutputSettings": {
-    "eDP-1": {
-      "vrrOnDemand": true
-    }
+    "eDP-1": {}
   },
   "hyprlandOutputSettings": {},
   "displayProfiles": {},
@@ -458,8 +456,7 @@
       "centerWidgets": [
         {
           "id": "music",
-          "enabled": true,
-          "mediaSize": 1
+          "enabled": true
         },
         {
           "id": "clock",
@@ -485,11 +482,13 @@
         },
         {
           "id": "cpuUsage",
-          "enabled": true
+          "enabled": true,
+          "minimumWidth": true
         },
         {
           "id": "memUsage",
-          "enabled": true
+          "enabled": true,
+          "minimumWidth": true
         },
         {
           "id": "notificationButton",
@@ -635,27 +634,8 @@
         "eDP-1": {
           "width": 189.10546875,
           "height": 189.10546875,
-          "x": 5.8046875,
-          "y": 69.0703125
-        }
-      }
-    },
-    {
-      "id": "dw_1777876692673_teaiio8ms",
-      "widgetType": "dmsDesktopCountdown",
-      "name": "DMS Desktop Countdown",
-      "enabled": false,
-      "config": {
-        "displayPreferences": [
-          "all"
-        ]
-      },
-      "positions": {
-        "eDP-1": {
-          "width": 200,
-          "height": 200,
-          "x": 26.38671875,
-          "y": 259.91796875
+          "x": 15.34375,
+          "y": 79.28515625
         }
       }
     },
@@ -677,8 +657,8 @@
         "eDP-1": {
           "width": 140.6328125,
           "height": 140.6328125,
-          "x": 28.53515625,
-          "y": 321.43359375
+          "x": 41.9609375,
+          "y": 319.6875
         }
       }
     }
