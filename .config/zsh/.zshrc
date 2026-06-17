@@ -59,12 +59,13 @@ fi
 # SSH configuration
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
-# PNPM configuration
+# pnpm
 export PNPM_HOME="/home/chirag/.local/share/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME/bin:"*) ;;
   *) export PATH="$PNPM_HOME/bin:$PATH" ;;
 esac
+# pnpm end
 
 # Java configuration
 [[ -x $(command -v java) ]] && export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:/bin/java::")
