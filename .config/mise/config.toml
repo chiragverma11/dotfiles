@@ -1,3 +1,4 @@
 [tools]
-node = "lts"
+agy = "latest"
+node = [ "lts", "latest" ]
 pnpm = "latest"
