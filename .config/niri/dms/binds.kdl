@@ -8,6 +8,7 @@ binds {
     Mod+Alt+L hotkey-overlay-title="Lock Screen" { spawn "dms" "ipc" "call" "lock" "lock"; }
     Mod+Alt+N hotkey-overlay-title="Night Mode: Toggle" { spawn "dms" "ipc" "call" "night" "toggle"; }
     Mod+Alt+Slash hotkey-overlay-title="Keybinds Cheatsheet: Open" { spawn "dms" "ipc" "call" "keybinds" "open" "niri"; }
+    Mod+Alt+space hotkey-overlay-title="Spotlight Bar" { spawn "dms" "ipc" "call" "spotlight-bar" "toggle"; }
     Mod+Comma hotkey-overlay-title="Settings" { spawn "dms" "ipc" "call" "settings" "focusOrToggle"; }
     Mod+F6 allow-when-locked=true { spawn "dms" "ipc" "call" "brightness" "decrement" "5" ""; }
     Mod+F7 allow-when-locked=true { spawn "dms" "ipc" "call" "brightness" "increment" "5" ""; }
@@ -131,11 +132,11 @@ binds {
     Print { screenshot; }
     XF86Launch1 { screenshot; }
     Mod+Shift+E { quit; }
+    Mod+Alt+T hotkey-overlay-title="OCR: NormCap" { spawn "flatpak" "run" "com.github.dynobo.normcap"; }
     Mod+Alt+V hotkey-overlay-title="Open Volume Control" { spawn "pavucontrol"; }
     Mod+B hotkey-overlay-title="Open Browser" { spawn "google-chrome"; }
     Mod+E hotkey-overlay-title="Open File Manager" { spawn "nautilus"; }
     Mod+T hotkey-overlay-title="Open Terminal" { spawn "kitty"; }
-    Mod+Alt+T hotkey-overlay-title="OCR: NormCap" { spawn "flatpak" "run" "com.github.dynobo.normcap"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.05-"; }
     XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.05+"; }
     Mod+D repeat=false { toggle-overview; }

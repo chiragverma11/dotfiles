@@ -14,5 +14,21 @@
   },
   "appShortcut": {
     "enabled": true
+  },
+  "commandRunner": {
+    "enabled": true,
+    "history": [
+      "sudo bleachbit",
+      "spotify_player",
+      "epiphany",
+      "jackett --NoRestart",
+      "yazi",
+      "btop"
+    ],
+    "maxHistoryItems": 20
+  },
+  "dnsSwitcher": {
+    "enabled": true,
+    "showIpAddress": "true"
   }
 }
