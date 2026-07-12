@@ -14,19 +14,19 @@
         "/home/chirag/.local/bin/asciinema": {
             "path": "/home/chirag/.local/bin/asciinema",
             "remote_name": "asciinema-x86_64-unknown-linux-gnu",
-            "version": "v3.2.0",
-            "hash": "89f431ea3a31f9a108f38050a242aa63f8d368975330212281675c4fb1399633",
-            "url": "https://github.com/asciinema/asciinema/releases/tag/v3.2.0",
+            "version": "v3.2.1",
+            "hash": "1b405bbda565b33c3c4718de67fedc3535580603c0694b1ff3fb04f363430a20",
+            "url": "https://github.com/asciinema/asciinema/releases/tag/v3.2.1",
             "provider": "github",
             "package_path": "",
             "pinned": false
         },
         "/home/chirag/.local/bin/bin": {
             "path": "/home/chirag/.local/bin/bin",
-            "remote_name": "bin_0.25.5_linux_amd64",
-            "version": "v0.25.5",
-            "hash": "e47065566205f4e833296a2dc23367da1622230faa021d9c0cab3b669c4282f9",
-            "url": "https://github.com/marcosnils/bin/releases/tag/v0.25.5",
+            "remote_name": "bin_0.27.0_linux_amd64",
+            "version": "v0.27.0",
+            "hash": "714f4fa245ef451bde744113b1ba6a0d0ef5f144e25ce440807f687efb1a3044",
+            "url": "https://github.com/marcosnils/bin/releases/tag/v0.27.0",
             "provider": "github",
             "package_path": "",
             "pinned": false
@@ -44,9 +44,9 @@
         "/home/chirag/.local/bin/cloudflare-speed-cli": {
             "path": "/home/chirag/.local/bin/cloudflare-speed-cli",
             "remote_name": "cloudflare-speed-cli",
-            "version": "v0.6.6",
-            "hash": "a87daaf8ec06067df8414533cab0ce66edd4a55e79e43c17a46680c962fb57e2",
-            "url": "https://github.com/kavehtehrani/cloudflare-speed-cli/releases/tag/v0.6.6",
+            "version": "v1.0.6",
+            "hash": "8fbe2859a9d34a7ed6aff040901e6f17f2fe7244e43194ac62c4a7ce13c92f6c",
+            "url": "https://github.com/kavehtehrani/cloudflare-speed-cli/releases/tag/v1.0.6",
             "provider": "github",
             "package_path": "cloudflare-speed-cli-x86_64-unknown-linux-musl/cloudflare-speed-cli",
             "pinned": false
@@ -54,9 +54,9 @@
         "/home/chirag/.local/bin/cloudflared": {
             "path": "/home/chirag/.local/bin/cloudflared",
             "remote_name": "cloudflared-linux-amd64",
-            "version": "2026.3.0",
-            "hash": "4a9e50e6d6d798e90fcd01933151a90bf7edd99a0a55c28ad18f2e16263a5c30",
-            "url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.3.0",
+            "version": "2026.7.1",
+            "hash": "79a0ade7fc854f62c1aaef48424d9d979e8c2fcd039189d24db82b84cd146be1",
+            "url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.7.1",
             "provider": "github",
             "package_path": "",
             "pinned": false
@@ -74,9 +74,9 @@
         "/home/chirag/.local/bin/lazygit": {
             "path": "/home/chirag/.local/bin/lazygit",
             "remote_name": "lazygit",
-            "version": "v0.61.1",
-            "hash": "b3ebc9b6168055cf56c0665f882ab87f3c340e5de21ae5c69233cd9e9f72cda8",
-            "url": "https://github.com/jesseduffield/lazygit/releases/tag/v0.61.1",
+            "version": "v0.63.0",
+            "hash": "47fe2c80404d79cb874cbb17156cc0a4e506a534efc2e7ccf5a50c61d3ed120c",
+            "url": "https://github.com/jesseduffield/lazygit/releases/tag/v0.63.0",
             "provider": "github",
             "package_path": "lazygit",
             "pinned": false
@@ -93,20 +93,30 @@
         },
         "/home/chirag/.local/bin/opencode": {
             "path": "/home/chirag/.local/bin/opencode",
-            "remote_name": "opencode-electron-linux-x86_64.AppImage",
-            "version": "v1.14.33",
-            "hash": "251e33cc3efd116a37902112ac2530a63b539a1cd6b7119913c06ec1d23cab61",
-            "url": "https://github.com/anomalyco/opencode/releases/tag/v1.14.33",
+            "remote_name": "opencode-desktop-linux-x86_64.AppImage",
+            "version": "v1.17.18",
+            "hash": "16347083fb42ad0e00e8d19a4c44dd58be9349cdd087f088dd27214568f5a704",
+            "url": "https://github.com/anomalyco/opencode/releases/tag/v1.17.18",
             "provider": "github",
             "package_path": "",
+            "pinned": false
+        },
+        "/home/chirag/.local/bin/resvg": {
+            "path": "/home/chirag/.local/bin/resvg",
+            "remote_name": "resvg",
+            "version": "v0.47.0",
+            "hash": "a53a45eafcaf3c04ceefc0c150c3d10fdf582d143d1ca5e4a7a64e661c55f02e",
+            "url": "github.com/linebender/resvg",
+            "provider": "github",
+            "package_path": "resvg",
             "pinned": false
         },
         "/home/chirag/.local/bin/sesh": {
             "path": "/home/chirag/.local/bin/sesh",
             "remote_name": "sesh",
-            "version": "v2.26.1",
-            "hash": "578f35cc8ca25f3ba7a9faac1d3a11f90ea4f536a5ca92310749dfcd5d1d64db",
-            "url": "https://github.com/joshmedeski/sesh/releases/tag/v2.26.1",
+            "version": "v2.26.2",
+            "hash": "422204f287a3752aa899c89c0c385babfea6c0833ae46764adb2c18eb79de74f",
+            "url": "https://github.com/joshmedeski/sesh/releases/tag/v2.26.2",
             "provider": "github",
             "package_path": "sesh",
             "pinned": false
@@ -114,9 +124,9 @@
         "/home/chirag/.local/bin/spotify_player": {
             "path": "/home/chirag/.local/bin/spotify_player",
             "remote_name": "spotify_player",
-            "version": "v0.23.0",
-            "hash": "fccf391697233aca229075597bab66b386778bd9b77d023d96951a1316b384fc",
-            "url": "https://github.com/aome510/spotify-player/releases/tag/v0.23.0",
+            "version": "v0.24.0",
+            "hash": "01b5a29ec18e59400a9f010ccd5a958f626571cb7f559bc9ea4ce9e3cc53f627",
+            "url": "https://github.com/aome510/spotify-player/releases/tag/v0.24.0",
             "provider": "github",
             "package_path": "spotify_player",
             "pinned": false
@@ -124,9 +134,9 @@
         "/home/chirag/.local/bin/surge": {
             "path": "/home/chirag/.local/bin/surge",
             "remote_name": "surge",
-            "version": "v0.8.5",
-            "hash": "243ae2d6660d923116f4a2b6bdeac09460d05d1ba22ffc02e21df200ad713926",
-            "url": "https://github.com/SurgeDM/Surge/releases/tag/v0.8.5",
+            "version": "v0.10.0",
+            "hash": "1e33601f8947588c51eff3b4666404b411c194d39310b5e68ed21cc0b8d6f007",
+            "url": "https://github.com/SurgeDM/Surge/releases/tag/v0.10.0",
             "provider": "github",
             "package_path": "surge",
             "pinned": false
