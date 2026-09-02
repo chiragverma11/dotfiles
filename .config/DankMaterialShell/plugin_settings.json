@@ -18,10 +18,10 @@
   "commandRunner": {
     "enabled": true,
     "history": [
+      "jackett --NoRestart",
       "sudo bleachbit",
       "spotify_player",
       "epiphany",
-      "jackett --NoRestart",
       "yazi",
       "btop"
     ],

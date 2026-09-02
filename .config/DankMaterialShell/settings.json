@@ -32,7 +32,7 @@
   "firstDayOfWeek": -1,
   "showWeekNumber": false,
   "calendarBackend": "auto",
-  "use24HourClock": false,
+  "clockFormat": "auto",
   "showSeconds": false,
   "padHours12Hour": false,
   "useFahrenheit": false,
@@ -60,6 +60,7 @@
   "blurEnabled": true,
   "blurForegroundLayers": true,
   "blurLayerOutlineOpacity": 0.12,
+  "blurBorderEnabled": true,
   "blurBorderColor": "outline",
   "blurBorderCustomColor": "#ffffff",
   "blurBorderOpacity": 0.35,
@@ -215,6 +216,7 @@
   "scrollTitleEnabled": false,
   "mediaAdaptiveWidthEnabled": true,
   "audioVisualizerEnabled": false,
+  "mediaUseAlbumArtAccent": false,
   "audioScrollMode": "volume",
   "audioWheelScrollAmount": 5,
   "audioDeviceScrollVolumeEnabled": false,
@@ -250,15 +252,15 @@
   "greeterAutoLogin": false,
   "greeterEnableFprint": false,
   "greeterEnableU2f": false,
-  "greeterWallpaperPath": "",
-  "greeterUse24HourClock": true,
-  "greeterShowSeconds": false,
-  "greeterPadHours12Hour": false,
+  "greeterWallpaperPath": "/home/chirag/Pictures/headphones.png",
   "greeterLockDateFormat": "",
   "greeterFontFamily": "",
   "greeterWallpaperFillMode": "",
-  "greeterSyncPending": false,
-  "greeterSyncBaseline": {},
+  "greeterPamExternallyManaged": false,
+  "greeterSyncPending": true,
+  "greeterSyncBaseline": {
+    "greeterWallpaperPath": ""
+  },
   "mediaSize": 1,
   "appLauncherViewMode": "list",
   "spotlightModalViewMode": "list",
@@ -278,6 +280,7 @@
     "apps": "list"
   },
   "niriOverviewOverlayEnabled": true,
+  "niriOverviewLauncherStyle": "full",
   "dankLauncherV2Size": "compact",
   "dankLauncherV2ShowSourceBadges": true,
   "dankLauncherV2BorderEnabled": false,
@@ -398,21 +401,6 @@
   "fadeToDpmsEnabled": true,
   "fadeToDpmsGracePeriod": 5,
   "launchPrefix": "",
-  "brightnessDevicePins": {},
-  "wifiNetworkPins": {
-    "preferredWifi": [
-      "TP-Link_E40C_5G",
-      "TP-Link_E40C",
-      "HGW-A7C953"
-    ]
-  },
-  "bluetoothDevicePins": {
-    "preferredDevice": [
-      "6C:0D:E1:5F:DB:4D"
-    ]
-  },
-  "audioInputDevicePins": {},
-  "audioOutputDevicePins": {},
   "gtkThemingEnabled": false,
   "qtThemingEnabled": false,
   "syncModeWithPortal": true,
@@ -490,6 +478,7 @@
   "notificationOverlayEnabled": false,
   "notificationPopupShadowEnabled": true,
   "notificationPopupPrivacyMode": false,
+  "notificationForegroundLayers": true,
   "modalDarkenBackground": true,
   "lockScreenShowPowerActions": true,
   "lockScreenShowSystemIcons": true,
@@ -504,6 +493,11 @@
   "maxFprintTries": 15,
   "enableU2f": false,
   "u2fMode": "or",
+  "lockPamPath": "",
+  "lockPamInlineFprint": false,
+  "lockPamInlineU2f": false,
+  "lockPamExternallyManaged": false,
+  "lockU2fPamPath": "",
   "lockScreenInactiveColor": "#000000",
   "lockScreenNotificationMode": 0,
   "lockScreenVideoEnabled": false,
@@ -567,6 +561,7 @@
   "updaterIntervalSeconds": 1800,
   "updaterIncludeFlatpak": true,
   "updaterAllowAUR": true,
+  "updaterIgnoredPackages": [],
   "displayNameMode": "system",
   "screenPreferences": {},
   "showOnLastDisplay": {},
@@ -777,7 +772,7 @@
       "id": "dw_1777876690427_5ghwfvjhl",
       "widgetType": "desktopClock",
       "name": "Desktop Clock",
-      "enabled": true,
+      "enabled": false,
       "config": {
         "style": "analog",
         "transparency": 0.8,
@@ -794,16 +789,16 @@
         "eDP-1": {
           "width": 189.10546875,
           "height": 189.10546875,
-          "x": 15.34375,
-          "y": 79.28515625
+          "x": 1324.44921875,
+          "y": 75.875
         }
       }
     },
     {
       "id": "dw_1777876843000_59hdls9xa",
       "widgetType": "appShortcut",
-      "name": "Application Shortcut",
-      "enabled": true,
+      "name": "Google Chrome",
+      "enabled": false,
       "config": {
         "displayPreferences": [
           "all"
@@ -811,14 +806,15 @@
         "shortcutApp": "google-chrome",
         "backgroundOpacity": 75,
         "followTheme": true,
-        "drawOutlines": false
+        "drawOutlines": false,
+        "drawBorder": true
       },
       "positions": {
         "eDP-1": {
           "width": 140.6328125,
           "height": 140.6328125,
-          "x": 41.9609375,
-          "y": 319.6875
+          "x": 78.546875,
+          "y": 604.91796875
         }
       }
     }
@@ -866,5 +862,5 @@
   "barInsetPaddingShared": -1,
   "barInsetPaddingSyncAll": false,
   "frameBarInsetPadding": -1,
-  "configVersion": 12
+  "configVersion": 13
 }
