@@ -1,5 +1,6 @@
 [tools]
 agy = "latest"
+bun = "latest"
 neovim = "latest"
 node = [ "lts", "latest" ]
 pnpm = "latest"
