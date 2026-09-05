@@ -49,7 +49,7 @@ M.mason = {
     -- web dev stuff
     "css-lsp",
     "html-lsp",
-    "typescript-language-server",
+    "tsc",
     "prettier",
     "prettierd",
     "tailwindcss-language-server",
