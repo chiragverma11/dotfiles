@@ -4,6 +4,7 @@
   "popupTransparency": 0.9,
   "dockTransparency": 0.2,
   "cornerRadius": 12,
+  "keyboardLayouts": "in(eng)",
   "animationSpeed": 4,
   "customAnimationDuration": 200,
   "barElevationEnabled": false,
