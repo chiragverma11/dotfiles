@@ -14,7 +14,6 @@ M.treesitter = {
     "markdown_inline",
     "prisma",
     "json",
-    "jsonc",
     "jsdoc",
     "yaml",
     "graphql",
