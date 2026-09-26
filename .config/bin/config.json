@@ -45,39 +45,6 @@
             "selected_asset": "cloudflare-speed-cli-x86_64-unknown-linux-musl.tar.xz",
             "pinned": false
         },
-        "/home/chirag/.local/bin/cloudflared": {
-            "path": "/home/chirag/.local/bin/cloudflared",
-            "remote_name": "cloudflared-linux-amd64",
-            "version": "2026.8.3",
-            "hash": "f29324fe934d1e100617484c78deef803c4dc2cd351d645bbde42e96b4fccc5e",
-            "url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.8.3",
-            "provider": "github",
-            "package_path": "",
-            "selected_asset": "cloudflared-linux-amd64",
-            "pinned": false
-        },
-        "/home/chirag/.local/bin/lazydocker": {
-            "path": "/home/chirag/.local/bin/lazydocker",
-            "remote_name": "lazydocker",
-            "version": "v0.25.2",
-            "hash": "fa14fba9f56266e6b1e6374b6ee477fcd5d7858915eb603e8e77ac577ce14a2c",
-            "url": "https://github.com/jesseduffield/lazydocker/releases/tag/v0.25.2",
-            "provider": "github",
-            "package_path": "lazydocker",
-            "selected_asset": "",
-            "pinned": false
-        },
-        "/home/chirag/.local/bin/lazygit": {
-            "path": "/home/chirag/.local/bin/lazygit",
-            "remote_name": "lazygit",
-            "version": "v0.64.1",
-            "hash": "200a6ae0c30c9a2edd5c891bd12f50495175dcc282b6feffd675edc01cb1e0f0",
-            "url": "https://github.com/jesseduffield/lazygit/releases/tag/v0.64.1",
-            "provider": "github",
-            "package_path": "lazygit",
-            "selected_asset": "lazygit_0.64.1_linux_x86_64.tar.gz",
-            "pinned": false
-        },
         "/home/chirag/.local/bin/linux-smassh": {
             "path": "/home/chirag/.local/bin/linux-smassh",
             "remote_name": "linux-smassh",
@@ -120,17 +87,6 @@
             "provider": "github",
             "package_path": "spotify_player",
             "selected_asset": "spotify_player-x86_64-unknown-linux-gnu.tar.gz",
-            "pinned": false
-        },
-        "/home/chirag/.local/bin/surge": {
-            "path": "/home/chirag/.local/bin/surge",
-            "remote_name": "surge",
-            "version": "v0.12.1",
-            "hash": "acaac99f7743269c9c451e72b0fcb4ad33053611e7cf0ae8a6e72c5a613eacfa",
-            "url": "https://github.com/SurgeDM/Surge/releases/tag/v0.12.1",
-            "provider": "github",
-            "package_path": "surge",
-            "selected_asset": "Surge_0.12.1_linux_amd64.tar.gz",
             "pinned": false
         }
     }

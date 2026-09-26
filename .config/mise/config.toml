@@ -1,6 +1,10 @@
 [tools]
 agy = "latest"
+"aqua:SurgeDM/Surge" = "latest"
 bun = "latest"
+cloudflared = "latest"
+lazydocker = "latest"
+lazygit = "latest"
 neovim = "latest"
 node = [ "lts", "latest" ]
 pnpm = "latest"
