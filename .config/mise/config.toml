@@ -5,6 +5,7 @@ bun = "latest"
 cloudflared = "latest"
 codex = "latest"
 gh = "latest"
+"github:alltuner/mise-completions-sync" = "latest"
 lazydocker = "latest"
 lazygit = "latest"
 neovim = "latest"
@@ -16,3 +17,6 @@ vercel = { version = "latest", allow_builds = [
 ], trust_policy_excludes = [
   "undici",
 ] }
+
+[hooks]
+postinstall = "misecompsync --shell zsh"
