@@ -1,3 +1,6 @@
+[settings]
+minimum_release_age_excludes = ["agy", "codex", "opencode"]
+
 [tools]
 agy = "latest"
 "aqua:SurgeDM/Surge" = "latest"
@@ -9,7 +12,7 @@ gh = "latest"
 lazydocker = "latest"
 lazygit = "latest"
 neovim = "latest"
-node = [ "lts", "latest" ]
+node = ["lts", "latest"]
 opencode = "latest"
 pnpm = "latest"
 vercel = { version = "latest", allow_builds = [
