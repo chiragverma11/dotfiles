@@ -20,6 +20,9 @@ autoload -Uz $ZFUNCDIR/*(.:t)
 # Load completions
 fpath=($ZDOTDIR/completions $fpath)
 
+# Load mise-completions-sync - https://github.com/alltuner/mise-completions-sync
+fpath=(${XDG_DATA_HOME:-$HOME/.local/share}/mise-completions/zsh $fpath)
+
 # Set any zstyles you might use for configuration.
 [[ ! -f $ZDOTDIR/.zstyles ]] || source $ZDOTDIR/.zstyles
 
@@ -77,9 +80,6 @@ export PATH=$PATH:/home/chirag/.spicetify
 if [[ -r "$ZDOTDIR/.zshrc.local" ]]; then
   source "$ZDOTDIR/.zshrc.local"
 fi
-
-# opencode
-export PATH=/home/chirag/.opencode/bin:$PATH
 
 # Mise
 eval "$(mise activate zsh)"
