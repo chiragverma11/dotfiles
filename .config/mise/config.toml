@@ -3,8 +3,16 @@ agy = "latest"
 "aqua:SurgeDM/Surge" = "latest"
 bun = "latest"
 cloudflared = "latest"
+codex = "latest"
+gh = "latest"
 lazydocker = "latest"
 lazygit = "latest"
 neovim = "latest"
 node = [ "lts", "latest" ]
+opencode = "latest"
 pnpm = "latest"
+vercel = { version = "latest", allow_builds = [
+  "esbuild",
+], trust_policy_excludes = [
+  "undici",
+] }
