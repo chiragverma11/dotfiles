@@ -1,6 +1,17 @@
 {
     "default_path": "/home/chirag/.local/bin",
     "bins": {
+        "/home/chirag/.local/bin/ani-cli": {
+            "path": "/home/chirag/.local/bin/ani-cli",
+            "remote_name": "ani-cli",
+            "version": "v5.1",
+            "hash": "f99a1dac807004becfb732a5518a0f2ded9dc08b467805abd03df5d580becd46",
+            "url": "github.com/pystardust/ani-cli",
+            "provider": "github",
+            "package_path": "",
+            "selected_asset": "ani-cli",
+            "pinned": false
+        },
         "/home/chirag/.local/bin/asciinema": {
             "path": "/home/chirag/.local/bin/asciinema",
             "remote_name": "asciinema-x86_64-unknown-linux-gnu",
