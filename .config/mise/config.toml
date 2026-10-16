@@ -1,5 +1,5 @@
 [settings]
-minimum_release_age_excludes = ["agy", "codex", "opencode"]
+minimum_release_age_excludes = ["agy", "codex", "npm:@opencode/cli"]
 
 [tools]
 agy = "latest"
@@ -13,8 +13,9 @@ lazydocker = "latest"
 lazygit = "latest"
 neovim = "latest"
 node = ["lts", "latest"]
-opencode = "latest"
+"npm:@opencode/cli" = { version = "latest", allow_builds = ["@opencode/cli"] }
 pnpm = "latest"
+uv = "latest"
 vercel = { version = "latest", allow_builds = [
   "esbuild",
 ], trust_policy_excludes = [
@@ -22,4 +23,4 @@ vercel = { version = "latest", allow_builds = [
 ] }
 
 [hooks]
-postinstall = "misecompsync --shell zsh"
+postinstall = "misecompsync --new-only --shell zsh"
