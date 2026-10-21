@@ -30,5 +30,38 @@
   "dnsSwitcher": {
     "enabled": true,
     "showIpAddress": "true"
+  },
+  "quickCapture": {
+    "enabled": true,
+    "recordingQuality": "high",
+    "postNotification": "notification",
+    "blinkRecordDot": false,
+    "showRegionBorder": true
+  },
+  "voxTypeOsd": {
+    "enabled": true,
+    "waveformSpeed": "balanced",
+    "waveformSensitivity": 8,
+    "osdWidth": "compact",
+    "bottomDistance": "standard",
+    "showWhileTranscribing": true
+  },
+  "bongoCat": {
+    "enabled": true,
+    "showMetrics": false,
+    "catYOffset": 0,
+    "pawHoldTime": 0,
+    "catColorMode": "classic",
+    "mouseEnabled": false,
+    "soundEnabled": false,
+    "soundVolume": 60,
+    "soundProfile": "bongo"
+  },
+  "emojiPicker": {
+    "enabled": true
+  },
+  "melodyctl": {
+    "enabled": true,
+    "pillStyle": "compact"
   }
 }

@@ -156,18 +156,18 @@
   "acMonitorTimeout": 1200,
   "acLockTimeout": 1800,
   "lockBeforeSuspend": true,
-  "matugenTemplateNeovim": false,
+  "matugenTemplateNeovim": true,
   "matugenTemplateNeovimSettings": {
     "dark": {
-      "baseTheme": "github_dark",
-      "harmony": 0.5
+      "baseTheme": "tokyonight",
+      "harmony": 0.35
     },
     "light": {
-      "baseTheme": "github_light",
+      "baseTheme": "tokyonight",
       "harmony": 0.5
     }
   },
-  "matugenTemplateNeovimSetBackground": true,
+  "matugenTemplateNeovimSetBackground": false,
   "osdPowerProfileEnabled": true,
   "barConfigs": [
     {
@@ -259,6 +259,10 @@
           "enabled": true
         },
         {
+          "id": "melodyctl",
+          "enabled": true
+        },
+        {
           "id": "controlCenterButton",
           "enabled": true,
           "showBrightnessIcon": false,
@@ -313,6 +317,147 @@
       "useOverlayLayer": false,
       "island": false,
       "dot": false
+    },
+    {
+      "id": "dot1792569551396",
+      "name": "Dot",
+      "enabled": false,
+      "position": 0,
+      "screenPreferences": [
+        "all"
+      ],
+      "showOnLastDisplay": true,
+      "leftWidgets": [
+        {
+          "id": "launcherButton",
+          "enabled": true
+        },
+        {
+          "id": "workspaceSwitcher",
+          "enabled": true
+        },
+        {
+          "id": "runningApps",
+          "enabled": true,
+          "runningAppsCompactMode": true,
+          "runningAppsGroupByApp": true,
+          "runningAppsCurrentWorkspace": false,
+          "runningAppsCurrentMonitor": false
+        },
+        {
+          "id": "focusedWindow",
+          "enabled": true,
+          "focusedWindowCompactMode": false
+        }
+      ],
+      "centerWidgets": [
+        {
+          "id": "music",
+          "enabled": true,
+          "overflowMode": "section",
+          "mediaStyle": "controls",
+          "mediaSize": 1,
+          "mediaShowLyrics": false,
+          "mediaShowCoverArt": true
+        },
+        {
+          "id": "clock",
+          "enabled": true,
+          "clockCompactMode": false
+        },
+        {
+          "id": "weather",
+          "enabled": true
+        }
+      ],
+      "rightWidgets": [
+        {
+          "id": "systemTray",
+          "enabled": true
+        },
+        {
+          "id": "privacyIndicator",
+          "enabled": true
+        },
+        {
+          "id": "clipboard",
+          "enabled": true
+        },
+        {
+          "id": "cpuUsage",
+          "enabled": true,
+          "minimumWidth": true
+        },
+        {
+          "id": "memUsage",
+          "enabled": true,
+          "minimumWidth": true,
+          "showSwap": false,
+          "showInGb": false
+        },
+        {
+          "id": "notificationButton",
+          "enabled": true
+        },
+        {
+          "id": "melodyctl",
+          "enabled": true
+        },
+        {
+          "id": "controlCenterButton",
+          "enabled": true,
+          "showBrightnessIcon": false,
+          "showBatteryIcon": false,
+          "showMicPercent": true
+        }
+      ],
+      "spacing": 4,
+      "innerPadding": 4,
+      "bottomGap": 0,
+      "transparency": 0.2,
+      "widgetTransparency": 0.75,
+      "squareCorners": false,
+      "noBackground": false,
+      "maximizeWidgetIcons": false,
+      "maximizeWidgetText": false,
+      "widgetPadding": 8,
+      "gothCornersEnabled": false,
+      "gothCornerRadiusOverride": false,
+      "gothCornerRadiusValue": 12,
+      "borderEnabled": false,
+      "borderColor": "surfaceText",
+      "borderOpacity": 1,
+      "borderThickness": 1,
+      "widgetOutlineEnabled": false,
+      "widgetOutlineColor": "primary",
+      "widgetOutlineOpacity": 1,
+      "widgetOutlineThickness": 1,
+      "fontScale": 1,
+      "iconScale": 1,
+      "autoHide": false,
+      "autoHideDelay": 250,
+      "showOnWindowsOpen": false,
+      "openOnOverview": true,
+      "visible": true,
+      "popupGapsAuto": true,
+      "popupGapsManual": 4,
+      "maximizeDetection": true,
+      "scrollEnabled": true,
+      "scrollXBehavior": "focusWindow",
+      "scrollYBehavior": "workspace",
+      "shadowIntensity": 0,
+      "shadowOpacity": 60,
+      "shadowColorMode": "text",
+      "shadowCustomColor": "#000000",
+      "clickThrough": false,
+      "attachToScreenEdge": false,
+      "followInterfaceStyle": false,
+      "widgetFollowInterfaceStyle": false,
+      "hoverPopouts": false,
+      "clickActionFollowMouse": false,
+      "useOverlayLayer": false,
+      "island": false,
+      "dot": true
     }
   ],
   "desktopWidgetInstances": [
