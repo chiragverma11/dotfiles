@@ -1,0 +1,40 @@
+{
+  "lockfileVersion": 1,
+  "plugins": {
+    "appShortcut": {
+      "repo": "https://github.com/oabragh/AppShortcut",
+      "commit": "373400a84e40b0fb73d6c809ea33c425b529c35f"
+    },
+    "calculator": {
+      "repo": "https://github.com/rochacbruno/DankCalculator",
+      "commit": "a27b80ad8c3dd42da11af83461674fb362817515"
+    },
+    "commandRunner": {
+      "repo": "https://github.com/devnullvoid/dms-command-runner",
+      "commit": "ea59490eede60d7dc87697b670f1eccc6ad54593"
+    },
+    "dankKDEConnect": {
+      "repo": "https://github.com/AvengeMedia/dms-plugins",
+      "path": "DankKDEConnect",
+      "commit": "4b5adf9a1d6c09f93831ebd99b447ad8cae0d6a2"
+    },
+    "dnsSwitcher": {
+      "repo": "https://github.com/JDKamalakar/DMS-DNS_Switcher",
+      "commit": "09feae14e4aa743b37031ff82a197176ba886a8b"
+    },
+    "emojiPicker": {
+      "repo": "https://github.com/hthienloc/dms-plugins",
+      "path": "emojiPicker",
+      "commit": "7c6e34bfecf68f392da9a55330e0fb112eaabbfd"
+    },
+    "quickCapture": {
+      "repo": "https://github.com/hthienloc/dms-plugins",
+      "path": "quickCapture",
+      "commit": "7c6e34bfecf68f392da9a55330e0fb112eaabbfd"
+    },
+    "voxTypeOsd": {
+      "repo": "https://github.com/irisblur17/dms-voxtype-osd",
+      "commit": "80fbcdbf375d56e090bf560b58ec774b7ef756b4"
+    }
+  }
+}
