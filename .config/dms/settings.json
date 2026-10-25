@@ -273,7 +273,7 @@
       "spacing": 4,
       "innerPadding": 4,
       "bottomGap": 0,
-      "transparency": 0.2,
+      "transparency": 0.25,
       "widgetTransparency": 0.75,
       "squareCorners": false,
       "noBackground": false,
@@ -516,7 +516,7 @@
     }
   },
   "configVersion": 42,
-  "radiusStrength": 38,
+  "radiusStrength": 50,
   "animationDuration": 200,
   "blurBorderEnabled": true,
   "dockConfigs": [
