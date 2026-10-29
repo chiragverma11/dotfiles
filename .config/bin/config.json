@@ -37,31 +37,20 @@
         "/home/chirag/.local/bin/cloudflare-speed-cli": {
             "path": "/home/chirag/.local/bin/cloudflare-speed-cli",
             "remote_name": "cloudflare-speed-cli",
-            "version": "v1.0.8",
-            "hash": "1d81736125ae7df2dc2636c213e35d1ceeb3590771e34b0cda6f9c01969e1831",
-            "url": "https://github.com/kavehtehrani/cloudflare-speed-cli/releases/tag/v1.0.8",
+            "version": "v1.0.11",
+            "hash": "7637c3e3fe3b163c18b4fc2f1257c1901e671eb75fb392aeca71674871dfa048",
+            "url": "https://github.com/kavehtehrani/cloudflare-speed-cli/releases/tag/v1.0.11",
             "provider": "github",
             "package_path": "cloudflare-speed-cli-x86_64-unknown-linux-musl/cloudflare-speed-cli",
             "selected_asset": "cloudflare-speed-cli-x86_64-unknown-linux-musl.tar.xz",
             "pinned": false
         },
-        "/home/chirag/.local/bin/linux-smassh": {
-            "path": "/home/chirag/.local/bin/linux-smassh",
-            "remote_name": "linux-smassh",
-            "version": "v3.2.1",
-            "hash": "11e125df20e55e82c3d98948ab4d37feaea0267f2c26dc92fd11c549f0ee40e7",
-            "url": "https://github.com/kraanzu/smassh/releases/tag/v3.2.1",
-            "provider": "github",
-            "package_path": "",
-            "selected_asset": "",
-            "pinned": false
-        },
         "/home/chirag/.local/bin/resvg": {
             "path": "/home/chirag/.local/bin/resvg",
             "remote_name": "resvg",
-            "version": "v0.48.1",
-            "hash": "8d1dbe4d8e56d3d052668afc69d9d93fba7b723b06f1d3425f29418da9a816af",
-            "url": "https://github.com/linebender/resvg/releases/tag/v0.48.1",
+            "version": "v0.49.0",
+            "hash": "1fc436320a57d0a47709fc43de7b377687e0836c556708e83b79eb1a018d2304",
+            "url": "https://github.com/linebender/resvg/releases/tag/v0.49.0",
             "provider": "github",
             "package_path": "resvg",
             "selected_asset": "resvg-linux-x86_64.tar.gz",
@@ -70,12 +59,23 @@
         "/home/chirag/.local/bin/sesh": {
             "path": "/home/chirag/.local/bin/sesh",
             "remote_name": "sesh",
-            "version": "v2.31.0",
-            "hash": "fd0c428063b8ba986c0154ed62ffdf6cb7436546c0d50c24ff968f6bf6130ba8",
-            "url": "https://github.com/joshmedeski/sesh/releases/tag/v2.31.0",
+            "version": "v2.34.0",
+            "hash": "a9410a24374cd4483f4c7dbf4608e670495a49057f39046df552a6179c0619ad",
+            "url": "https://github.com/joshmedeski/sesh/releases/tag/v2.34.0",
             "provider": "github",
             "package_path": "sesh",
             "selected_asset": "sesh_Linux_x86_64.tar.gz",
+            "pinned": false
+        },
+        "/home/chirag/.local/bin/smassh": {
+            "path": "/home/chirag/.local/bin/smassh",
+            "remote_name": "linux-smassh",
+            "version": "v3.2.1",
+            "hash": "11e125df20e55e82c3d98948ab4d37feaea0267f2c26dc92fd11c549f0ee40e7",
+            "url": "github.com/kraanzu/smassh",
+            "provider": "github",
+            "package_path": "",
+            "selected_asset": "linux-smassh",
             "pinned": false
         },
         "/home/chirag/.local/bin/spotify_player": {
@@ -87,6 +87,17 @@
             "provider": "github",
             "package_path": "spotify_player",
             "selected_asset": "spotify_player-x86_64-unknown-linux-gnu.tar.gz",
+            "pinned": false
+        },
+        "/home/chirag/.local/bin/yt-x": {
+            "path": "/home/chirag/.local/bin/yt-x",
+            "remote_name": "yt-x",
+            "version": "v0.8.7",
+            "hash": "efba5ebb1007f6c5966624d91eaaa48b5879ac5dd21be15058ee5ebb7c7d7077",
+            "url": "github.com/Benexl/yt-x",
+            "provider": "github",
+            "package_path": "",
+            "selected_asset": "yt-x",
             "pinned": false
         }
     }
