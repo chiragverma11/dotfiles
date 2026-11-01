@@ -27,7 +27,7 @@ jeffreytse/zsh-vi-mode
 aloxaf/fzf-tab
 zsh-users/zsh-autosuggestions
 zdharma-continuum/fast-syntax-highlighting
-marlonrichert/zsh-autocomplete
+marlonrichert/zsh-autocomplete pin:027cdab14451e98c9d36d72b1f79d9488ac88e46
 
 romkatv/powerlevel10k
 
