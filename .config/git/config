@@ -4,6 +4,7 @@
 	format = ssh
 [gpg "ssh"]
     allowedSignersFile = ~/.config/git/allowed_signers
+	program = ~/bin/git-ssh-sign
 [user]
 	name = Chirag Verma
 	email = chiragverma1013@gmail.com

@@ -1,0 +1,37 @@
+#!/usr/bin/env sh
+# git-ssh-sign: lazy-load the SSH signing key into ssh-agent, then delegate to ssh-keygen.
+# Git invokes this as gpg.ssh.program for both `sign` and `verify`.
+# `ssh-keygen -Y sign -f <pub>` can USE an agent-loaded key without a
+# passphrase prompt, but unlike `ssh`, it never ADDS the key (AddKeysToAgent
+# only fires on host connections, i.e. push/pull). So the first commit after
+# boot would prompt every time without ever caching. This wrapper bridges
+# that gap: on `sign`, ensure the key is in the agent first (single prompt),
+# then exec ssh-keygen which signs via the agent with no second prompt.
+# Sessions with no commits/pushes never prompt.
+set -u
+
+PRIV="$HOME/.ssh/id_ed25519_github_personal"
+PUB="$PRIV.pub"
+SSH_ADD="$(command -v ssh-add 2>/dev/null || echo /usr/bin/ssh-add)"
+SSH_KEYGEN="$(command -v ssh-keygen 2>/dev/null || echo /usr/bin/ssh-keygen)"
+
+is_sign=0
+for arg in "$@"; do
+    if [ "$arg" = "sign" ]; then
+        is_sign=1
+        break
+    fi
+done
+
+if [ "$is_sign" -eq 1 ] && [ -f "$PUB" ] && [ -f "$PRIV" ]; then
+    keydata="$(cut -d' ' -f1-2 "$PUB" 2>/dev/null)"
+    if [ -n "$keydata" ]; then
+        if ! "$SSH_ADD" -L 2>/dev/null | grep -q -F "$keydata"; then
+            # Detach stdin: git pipes the data-to-sign on stdin, ssh-add
+            # must not consume it. Prompt goes to /dev/tty or $SSH_ASKPASS.
+            "$SSH_ADD" "$PRIV" </dev/null
+        fi
+    fi
+fi
+
+exec "$SSH_KEYGEN" "$@"
