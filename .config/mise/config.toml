@@ -1,5 +1,5 @@
 [settings]
-minimum_release_age_excludes = ["agy", "codex", "npm:@opencode/cli"]
+minimum_release_age_excludes = ["agy", "codex", "opencode"]
 
 [tools]
 agy = "latest"
@@ -13,7 +13,7 @@ lazydocker = "latest"
 lazygit = "latest"
 neovim = "latest"
 node = ["lts", "latest"]
-"npm:@opencode/cli" = { version = "latest", allow_builds = ["@opencode/cli"] }
+opencode = "latest"
 pnpm = "latest"
 uv = "latest"
 vercel = { version = "latest", allow_builds = [
