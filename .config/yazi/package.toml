@@ -9,14 +9,14 @@ rev = "896fa5a"
 hash = "5b2fbef7d1513ce38ff72623a071a5e"
 
 [[plugin.deps]]
-use = "yazi-rs/plugins:mount"
-rev = "896fa5a"
-hash = "ba1a606728adb75b091b6eaf3fd60372"
-
-[[plugin.deps]]
 use = "Jormala/relative-motions"
 rev = "d4f2003"
 hash = "e0017cae4c0772dd41b7e7c259a6e683"
+
+[[plugin.deps]]
+use = "PHONE1X/lsblk-mount"
+rev = "73e863f"
+hash = "69e36cdc69855863e0c1b176e19838cd"
 
 [flavor]
 deps = []

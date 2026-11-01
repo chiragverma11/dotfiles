@@ -60,7 +60,8 @@ run  = "plugin toggle-pane max-preview"
 desc = "Maximize or restore the preview pane"
 
 
-# mount plugin
+# lsblk-mount plugin
 [[mgr.prepend_keymap]]
-on  = "<C-m>"
-run = "plugin mount"
+on  = "M"
+run = "plugin lsblk-mount"
+desc = "Open the drive mount manager"
