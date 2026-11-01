@@ -49,13 +49,13 @@ desc = "Move in relative steps"
 
 # Hide/Show preview
 [[mgr.prepend_keymap]]
-on   = "T"
+on   = [ "t", "p" ]
 run  = "plugin toggle-pane min-preview"
-desc = "Show or hide the preview pane"
+desc = "Toggle the preview pane"
 
 # Maximize/Restore preview
 [[mgr.prepend_keymap]]
-on   = "M"
+on   = [ "t", "m" ]
 run  = "plugin toggle-pane max-preview"
 desc = "Maximize or restore the preview pane"
 
