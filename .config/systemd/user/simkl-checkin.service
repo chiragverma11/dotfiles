@@ -1,0 +1,8 @@
+[Unit]
+Description=Daily Simkl check-in for Loyalty PRO (opens simkl.com)
+After=graphical-session.target network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=%h/bin/simkl-checkin

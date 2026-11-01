@@ -1,0 +1,12 @@
+[Unit]
+Description=Open Simkl daily for Loyalty PRO
+
+[Timer]
+OnCalendar=*-*-* 06:00:00
+OnBootSec=5min
+Persistent=true
+RandomizedDelaySec=5min
+Unit=simkl-checkin.service
+
+[Install]
+WantedBy=timers.target

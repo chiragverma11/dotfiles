@@ -1,0 +1,99 @@
+#!/usr/bin/env bash
+# simkl-checkin - open Simkl once per day so Loyalty PRO counts the day.
+#
+# Any logged-in simkl.com page view registers the day; claiming PRO is still
+# manual at https://simkl.com/vip/loyalty/ after 20 days (15 on Supporter).
+# This script just opens that page in your default browser, at most once a day.
+#
+# Usage: simkl-checkin [--force] [--dry-run] [--status]
+set -euo pipefail
+
+URL="${SIMKL_URL:-https://simkl.com/vip/loyalty/}"
+CACHE_DIR="${XDG_CACHE_HOME:-$HOME/.cache}/simkl-checkin"
+STATE_FILE="${CACHE_DIR}/last-day"
+LOCK_FILE="${CACHE_DIR}/lock"
+
+FORCE=0
+DRY_RUN=0
+
+log() { printf 'simkl-checkin: %s\n' "$*"; }
+warn() { printf 'simkl-checkin: WARN: %s\n' "$*" >&2; }
+die() { local msg="$1"; shift; printf 'simkl-checkin: ERROR: %s\n' "$msg" >&2; exit "${1:-1}"; }
+
+usage() {
+  cat <<'USAGE'
+Usage: simkl-checkin [--force] [--dry-run] [--status]
+
+  --force    open even if this Simkl day is already registered
+  --dry-run  print what would happen without opening a browser
+  --status   show last registered Simkl day (UTC) and exit
+USAGE
+}
+
+for arg in "$@"; do
+  case "$arg" in
+    --force) FORCE=1 ;;
+    --dry-run) DRY_RUN=1 ;;
+    --status)
+      if [[ -f "$STATE_FILE" ]]; then
+        log "last Simkl day (UTC): $(cat "$STATE_FILE")"
+      else
+        log "never checked in (no state file)"
+      fi
+      exit 0
+      ;;
+    -h | --help) usage; exit 0 ;;
+    *) die "Unknown argument: $arg (try --help)" 2 ;;
+  esac
+done
+
+# Simkl's loyalty day rolls at 00:00 UTC (05:30 IST), NOT at local midnight and
+# NOT at the profile timezone. Track the UTC date so an early-morning boot before
+# 05:30 counts as yesterday and doesn't block the 06:00 run.
+TODAY="$(date -u +%F)"
+mkdir -p "$CACHE_DIR"
+
+# Prevent overlapping timer + boot runs.
+exec 9>"$LOCK_FILE"
+if ! flock -n 9; then
+  log "another instance is running, exiting"
+  exit 0
+fi
+
+if [[ "$FORCE" -eq 0 && -f "$STATE_FILE" && "$(cat "$STATE_FILE" 2>/dev/null || true)" == "$TODAY" ]]; then
+  log "already registered Simkl day $TODAY (UTC), skipping"
+  exit 0
+fi
+
+if [[ "$DRY_RUN" -eq 1 ]]; then
+  log "[dry-run] would open $URL"
+  exit 0
+fi
+
+# Systemd timers can fire before login; without a graphical session xdg-open
+# cannot open your browser, so fail and let the timer retry on next boot.
+if [[ -z "${DISPLAY:-}" && -z "${WAYLAND_DISPLAY:-}" ]]; then
+  die "no graphical session (DISPLAY and WAYLAND_DISPLAY unset); retry after login" 1
+fi
+
+command -v xdg-open >/dev/null 2>&1 || die "xdg-open not found" 1
+
+# Wait briefly for network (captive portal / wifi not up yet on boot).
+# NOTE: simkl.com returns 403 to non-browser clients (bot protection), so do
+# NOT use curl -f here: any HTTP response means the network path is up.
+READY=0
+for _ in 1 2 3 4 5 6; do
+  if curl -sS --max-time 10 -o /dev/null "https://simkl.com/" 2>/dev/null; then
+    READY=1
+    break
+  fi
+  sleep 10
+done
+[[ "$READY" -eq 1 ]] || die "simkl.com unreachable after ~60s, will retry next run" 1
+
+if ! xdg-open "$URL" >/dev/null 2>&1; then
+  die "xdg-open failed" 1
+fi
+
+printf '%s\n' "$TODAY" > "$STATE_FILE"
+log "opened $URL (Simkl day $TODAY UTC)"
