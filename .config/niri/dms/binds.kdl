@@ -136,6 +136,11 @@ binds {
     Mod+Alt+V hotkey-overlay-title="Open Volume Control" { spawn "pavucontrol"; }
     Mod+B hotkey-overlay-title="Open Browser" { spawn "google-chrome"; }
     Mod+E hotkey-overlay-title="Open File Manager" { spawn "nautilus"; }
+    Mod+Shift+S repeat=false hotkey-overlay-title="Spotify Player" {
+        spawn "kitten" "quick-access-terminal" \
+            "--instance-group" "spotify" \
+            "--detach" "/home/chirag/.local/bin/spotify_player";
+    }
     Mod+T hotkey-overlay-title="Open Terminal" { spawn "kitty"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.05-"; }
     XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.05+"; }
