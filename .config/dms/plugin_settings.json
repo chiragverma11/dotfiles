@@ -36,7 +36,9 @@
     "recordingQuality": "high",
     "postNotification": "notification",
     "blinkRecordDot": false,
-    "showRegionBorder": true
+    "showRegionBorder": true,
+    "showPillBorder": true,
+    "saveFilenamePattern": "Screenshot from %Y-%m-%d %H-%M-%S"
   },
   "voxTypeOsd": {
     "enabled": true,
