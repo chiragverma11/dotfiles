@@ -1,8 +1,12 @@
 binds {
+    Alt+Print hotkey-overlay-title="Screenshot Window" { spawn "dms" "ipc" "call" "quickCapture" "screenshot" "window" "edit"; }
+    Alt+XF86Launch1 hotkey-overlay-title="Screenshot Window" { spawn "dms" "ipc" "call" "quickCapture" "screenshot" "window" "edit"; }
     Ctrl+Alt+Delete hotkey-overlay-title="Task Manager" { spawn "dms" "ipc" "call" "processlist" "focusOrToggle"; }
+    Ctrl+Print hotkey-overlay-title="Screenshot Screen" { spawn "dms" "ipc" "call" "quickCapture" "screenshot" "full" "edit"; }
     Ctrl+Shift+R hotkey-overlay-title="Rename Workspace" { spawn "dms" "ipc" "call" "workspace-rename" "open"; }
     Ctrl+XF86AudioLowerVolume allow-when-locked=true { spawn "dms" "ipc" "call" "mpris" "decrement" "3"; }
     Ctrl+XF86AudioRaiseVolume allow-when-locked=true { spawn "dms" "ipc" "call" "mpris" "increment" "3"; }
+    Ctrl+XF86Launch1 hotkey-overlay-title="Screenshot Screen" { spawn "dms" "ipc" "call" "quickCapture" "screenshot" "full" "edit"; }
     Mod+Alt+C hotkey-overlay-title="Color Picker: Toggle" { spawn "dms" "ipc" "call" "color-picker" "toggle"; }
     Mod+Alt+I hotkey-overlay-title="Idle Inhibit: Toggle" { spawn "dms" "ipc" "call" "inhibit" "toggle"; }
     Mod+Alt+L hotkey-overlay-title="Lock Screen" { spawn "dms" "ipc" "call" "lock" "lock"; }
@@ -19,6 +23,7 @@ binds {
     Mod+Space hotkey-overlay-title="Application Launcher" { spawn "dms" "ipc" "call" "spotlight" "toggle"; }
     Mod+V hotkey-overlay-title="Clipboard Manager" { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
     Mod+Y hotkey-overlay-title="Browse Wallpapers" { spawn "dms" "ipc" "call" "dankdash" "wallpaper"; }
+    Print hotkey-overlay-title="Screenshot" { spawn "dms" "ipc" "call" "quickCapture" "screenshot" "region" "edit"; }
     Super+X hotkey-overlay-title="Power Menu: Toggle" { spawn "dms" "ipc" "call" "powermenu" "toggle"; }
     XF86AudioMicMute allow-when-locked=true { spawn "dms" "ipc" "call" "audio" "micmute"; }
     XF86AudioMute allow-when-locked=true { spawn "dms" "ipc" "call" "audio" "mute"; }
@@ -27,6 +32,7 @@ binds {
     XF86AudioPlay allow-when-locked=true { spawn "dms" "ipc" "call" "mpris" "playPause"; }
     XF86AudioPrev allow-when-locked=true { spawn "dms" "ipc" "call" "mpris" "previous"; }
     XF86AudioStop allow-when-locked=true { spawn "dms" "ipc" "call" "mpris" "stop"; }
+    XF86Launch1 hotkey-overlay-title="Screenshot" { spawn "dms" "ipc" "call" "quickCapture" "screenshot" "region" "edit"; }
     XF86MonBrightnessDown allow-when-locked=true { spawn "dms" "ipc" "call" "brightness" "decrement" "5" ""; }
     XF86MonBrightnessUp allow-when-locked=true { spawn "dms" "ipc" "call" "brightness" "increment" "5" ""; }
     Mod+1 { focus-workspace 1; }
@@ -63,8 +69,6 @@ binds {
     Mod+U { focus-workspace-down; }
     Mod+WheelScrollDown cooldown-ms=150 { focus-workspace-down; }
     Mod+WheelScrollUp cooldown-ms=150 { focus-workspace-up; }
-    Alt+Print { screenshot-window; }
-    Alt+XF86Launch1 { screenshot-window; }
     Mod+BracketLeft { consume-or-expel-window-left; }
     Mod+BracketRight { consume-or-expel-window-right; }
     Mod+C { center-column; }
@@ -127,12 +131,7 @@ binds {
     Mod+WheelScrollLeft { focus-column-left; }
     Mod+WheelScrollRight { focus-column-right; }
     Mod+Shift+P { power-off-monitors; }
-    Ctrl+Print { screenshot-screen; }
-    Ctrl+XF86Launch1 { screenshot-screen; }
-    Print { screenshot; }
-    XF86Launch1 { screenshot; }
     Mod+Shift+E { quit; }
-    Mod+Alt+T hotkey-overlay-title="OCR: NormCap" { spawn "flatpak" "run" "com.github.dynobo.normcap"; }
     Mod+Alt+V hotkey-overlay-title="Open Volume Control" { spawn "pavucontrol"; }
     Mod+B hotkey-overlay-title="Open Browser" { spawn "google-chrome"; }
     Mod+E hotkey-overlay-title="Open File Manager" { spawn "nautilus"; }
